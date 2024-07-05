@@ -1,23 +1,30 @@
-import classes from './LoginForm.module.scss';
 import { useRef, FormEvent } from 'react';
 import { login } from '../../api/api.ts';
 import { useMutation } from '@tanstack/react-query';
 import { useNavigate } from 'react-router-dom';
+import { Button, Card, FormControl, Input, InputLabel, styled } from '@mui/material';
 
+const CardStyled = styled(Card)`
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: ${({theme}) => theme.spacing(4)};
+`;
+
+const FormStyled = styled('form')`
+    width: 15rem;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: ${({theme}) => theme.spacing(4)};
+`;
 
 export const LoginForm = () => {
   const usernameRef = useRef<HTMLInputElement>(null);
   const passwordRef = useRef<HTMLInputElement>(null);
-
-  // useQuery <-
-  // useMutation <-
-
-  // state: { login: ..., getSmth: ...}
-  // App
-  //  LoginPage
-  //    LoginForm -> useMutation -> useContext(ReactQueryContext)
-
-  // Redux Toolkit / RTK
 
   const navigate = useNavigate();
 
@@ -40,22 +47,24 @@ export const LoginForm = () => {
     const username = usernameRef.current?.value ?? '';
     const password = passwordRef.current?.value ?? '';
 
+    console.log('username and password', username, password);
+
     loginMutation.mutate({username, password});
   }
 
   return (
-    <form className={classes.loginForm} onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="username">Username</label>
-        <input type="text" id="username" ref={usernameRef} />
-      </div>
-      <div>
-        <label htmlFor="password">Password</label>
-        <input type="password" id="password" ref={passwordRef} />
-      </div>
-      <div>
-        <button type="submit" disabled={loginMutation.isPending}>Login</button>
-      </div>
-    </form>
+    <CardStyled>
+      <FormStyled onSubmit={handleSubmit}>
+        <FormControl>
+          <InputLabel htmlFor="username-input">Username</InputLabel>
+          <Input id="username-input" inputRef={usernameRef} />
+        </FormControl>
+        <FormControl>
+          <InputLabel htmlFor="password-input">Password</InputLabel>
+          <Input id="password-input" inputRef={passwordRef} />
+        </FormControl>
+        <Button type="submit" variant="contained" color="primary" disabled={loginMutation.isPending}>Login</Button>
+      </FormStyled>
+    </CardStyled>
   );
 }
