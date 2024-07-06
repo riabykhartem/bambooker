@@ -1,6 +1,7 @@
 export interface Desk {
   id: string;
   name: string;
+  locationId: string;
   features: DeskFeature[];
 }
 

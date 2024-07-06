@@ -32,7 +32,7 @@ export const LoginForm = () => {
     mutationFn: login,
     mutationKey: ['login'],
     onSuccess: () => {
-      navigate('/desks');
+      navigate('/c80ae63/desks');
     },
     onError: error => {
       console.error('login error', error); // <- stay
