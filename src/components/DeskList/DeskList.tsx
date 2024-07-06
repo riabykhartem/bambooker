@@ -1,6 +1,9 @@
 import { FormEvent, useEffect, useRef, useState } from 'react';
 import { getDesks } from '../../api/api.ts';
 import { Desk } from '../../api/desk.model.ts';
+import { MainLayout } from '../../layouts/MainLayout.tsx';
+import { DeskCard } from '../DeskCard/DeskCard.tsx';
+import { List, ListItem } from '@mui/material';
 
 export const DeskList = () => {
 
@@ -29,16 +32,18 @@ export const DeskList = () => {
   }
 
   return (
-    <>
+    <MainLayout>
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder="Search for desk" ref={searchInputRef} />
         <button type="submit">Search</button>
       </form>
-      <ul>
+      <List>
         {desks.map((desk) => (
-          <li key={desk.id}>{desk.name}</li>
+          <ListItem key={desk.id}>
+            <DeskCard {...desk} />
+          </ListItem>
         ))}
-      </ul>
-    </>
+      </List>
+    </MainLayout>
   )
 }
