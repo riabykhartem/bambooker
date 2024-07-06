@@ -7,6 +7,6 @@ export const DesksPage = () => {
     throw new Error('locationId param is missing');
 
   return (
-    <DeskList locationId={locationId} />
+    <DeskList key={locationId} locationId={locationId} />
   );
 }
