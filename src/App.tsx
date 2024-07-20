@@ -5,13 +5,13 @@ import { DesksPage } from './pages/DesksPage.tsx';
 
 const queryClient = new QueryClient();
 
-const browserRouter = createBrowserRouter([ // <Routes>
-  { // <Route path="/" component="" />
+const browserRouter = createBrowserRouter([
+  {
     path: '',
     Component: LoginPage,
   },
   {
-    path: '/desks',
+    path: '/:locationId/desks',
     Component: DesksPage,
   },
 ]);

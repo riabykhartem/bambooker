@@ -12,6 +12,7 @@ export const DeskList = () => {
   console.log('DeskList is rendering...');
 
   const [desks, setDesks] = useState<Desk[]>([]);
+  const [locations, setLocations] = useState<Location[]>([]);
 
 
   useEffect(() => {
@@ -31,23 +32,34 @@ export const DeskList = () => {
 
     const q = searchInputRef.current?.value ?? '';
 
-    getDesks({query: q})
+    getDesks({locationId: props.locationId, searchTerm: q})
       .then(results => {
         setDesks(results);
       });
   }
 
+  const handleLocationChange = (e: ChangeEvent<HTMLSelectElement>) => {
+    navigate(`/${e.target.value}/desks`);
+  }
+
   return (
-    <>
+    <MainLayout>
+      <select value={props.locationId} onChange={handleLocationChange}>
+        {locations.map(location => (
+          <option key={location.id} value={location.id}>{location.displayName}</option>
+        ))}
+      </select>
       <form onSubmit={handleSubmit}>
         <input onChange={handleChange} type="text" placeholder="Search for desk" ref={searchInputRef} />
         <button type="submit">Search</button>
       </form>
-      <ul>
+      <List>
         {desks.map((desk) => (
-          <li key={desk.id}>{desk.name}</li>
+          <ListItem key={desk.id}>
+            <DeskCard {...desk} />
+          </ListItem>
         ))}
-      </ul>
-    </>
+      </List>
+    </MainLayout>
   )
 }
