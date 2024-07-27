@@ -28,12 +28,14 @@ export const DeskListToolbar = (props: DeskListToolbarProps) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    props.handleSearch(debouncedSearch)
     getLocations()
       .then(locations => {
         setLocations(locations);
       });
+  }, []);
 
+  useEffect(() => {
+    props.handleSearch(debouncedSearch);
   }, [debouncedSearch])
 
   const handleLocationChange = (e: SelectChangeEvent) => {
