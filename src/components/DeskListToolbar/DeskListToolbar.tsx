@@ -17,7 +17,7 @@ const ToolbarStyled = styled(Toolbar)`
 `;
 
 export interface DeskListToolbarProps {
-  handleSearch: (value: string) => void
+  handleSearch: (value?: string, date?: Date) => void
   locationId: string
 }
 
@@ -38,8 +38,8 @@ export const DeskListToolbar = (props: DeskListToolbarProps) => {
   }, []);
 
   useEffect(() => {
-    props.handleSearch(debouncedSearch);
-  }, [debouncedSearch])
+    props.handleSearch(debouncedSearch, date?.toDate());
+  }, [debouncedSearch, date])
 
   const handleLocationChange = (e: SelectChangeEvent) => {
     navigate(`/${e.target.value}/desks`);

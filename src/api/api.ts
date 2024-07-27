@@ -4,7 +4,7 @@ import { Location } from './location.model';
 import { locations } from './locations.data';
 
 const validCredentials = [
-  {username: 'user', password: 'user'},
+  { username: 'user', password: 'user' },
 ];
 
 export const login = (params: { username: string, password: string }) => {
@@ -22,8 +22,11 @@ export const login = (params: { username: string, password: string }) => {
 export const getDesks = (params: {
   locationId: string;
   searchTerm?: string;
+  date?: Date;
   features?: DeskFeature[];
 }) => {
+  console.log('getDesks', params);
+
   return new Promise<Desk[]>((resolve) => {
     setTimeout(() => {
       const results = desks

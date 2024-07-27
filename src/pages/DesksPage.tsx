@@ -15,8 +15,8 @@ export const DesksPage = () => {
   if (!locationId)
     throw new Error('locationId param is missing');
 
-  const handleSearch = (searchTerm: string) => {
-    getDesks({ locationId: locationId, searchTerm: searchTerm })
+  const handleSearch = (searchTerm?: string, date?: Date) => {
+    getDesks({ locationId: locationId, searchTerm: searchTerm, date })
       .then(results => {
         setDesks(results);
       });
