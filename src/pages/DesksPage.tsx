@@ -1,8 +1,8 @@
 import { DeskList } from '../components/DeskList/DeskList.tsx';
 import { useParams } from 'react-router-dom';
-import { DeskSearch } from '../components/DeskSearch/DeskSearch.tsx'
+import { DeskListToolbar } from '../components/DeskListToolbar/DeskListToolbar.tsx'
 import { useState } from 'react';
-
+import { AppBar, Toolbar } from "@mui/material";
 
 export const DesksPage = () => {
   console.log("is rendering");
@@ -18,8 +18,11 @@ export const DesksPage = () => {
   }
   return (
     <>
-      <DeskSearch locationId={locationId} handleSearch={handleSearch} />
-      <DeskList key={locationId} locationId={locationId} searchValue={searchValue} />
+      <AppBar position="fixed" color="inherit">
+        <DeskListToolbar locationId={locationId} handleSearch={handleSearch}/>
+      </AppBar>
+      <Toolbar/>
+      <DeskList key={locationId} locationId={locationId} searchValue={searchValue}/>
     </>
   )
 }
