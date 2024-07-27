@@ -4,14 +4,18 @@ import App from './App.tsx'
 import './index.css'
 import { createTheme, CssBaseline, ThemeProvider } from '@mui/material';
 import { themeOptions } from './mui/themeOptions.ts';
+import { LocalizationProvider } from "@mui/x-date-pickers";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 
 const theme = createTheme(themeOptions)
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <CssBaseline/>
-      <App/>
+      <LocalizationProvider dateAdapter={AdapterDayjs}>
+        <CssBaseline/>
+        <App/>
+      </LocalizationProvider>
     </ThemeProvider>
   </React.StrictMode>,
 )
