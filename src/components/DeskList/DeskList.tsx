@@ -1,9 +1,10 @@
-import {  useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { getDesks } from '../../api/api';
 import { Desk } from '../../api/desk.model';
 import { MainLayout } from '../../layouts/MainLayout.tsx';
 import { DeskCard } from '../DeskCard/DeskCard.tsx';
 import { List, ListItem } from '@mui/material';
+
 
 export interface DeskListProps {
   locationId: string;
@@ -18,7 +19,7 @@ export const DeskList = (props: DeskListProps) => {
 
 
   useEffect(() => {
-    getDesks({locationId: props.locationId, searchTerm: props.searchValue})
+    getDesks({ locationId: props.locationId, searchTerm: props.searchValue })
       .then(results => {
         setDesks(results);
       });
@@ -27,7 +28,9 @@ export const DeskList = (props: DeskListProps) => {
 
   return (
     <MainLayout>
-      <List>
+      <List sx={{
+        width: '360px'
+      }}>
         {desks.map((desk) => (
           <ListItem key={desk.id}>
             <DeskCard {...desk} />

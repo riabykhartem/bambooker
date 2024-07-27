@@ -2,10 +2,7 @@ import { PropsWithChildren } from 'react';
 import { Box, styled } from '@mui/material';
 
 const BoxStyled = styled(Box)`
-    @media (min-width: 1280px) {
-        max-width: 1280px;
-        margin: auto;
-    }
+    padding: ${({ theme }) => theme.spacing(0, 1, 0, 1)};
 `;
 
 export const MainLayout = (props: PropsWithChildren) => {

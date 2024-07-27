@@ -32,7 +32,7 @@ export const getDesks = (params: {
           (!params.features || params.features.filter(f => d.features.some(df => df === f)).length === params.features.length));
 
       resolve(results);
-    }, 300);
+    }, 100);
   });
 }
 
@@ -40,6 +40,6 @@ export const getLocations = () => {
   return new Promise<Location[]>((resolve) => {
     setTimeout(() => {
       resolve(locations);
-    }, 300);
+    }, 100);
   });
 }
