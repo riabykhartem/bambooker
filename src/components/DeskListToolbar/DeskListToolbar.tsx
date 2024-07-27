@@ -6,17 +6,19 @@ import { useDebounce } from "../../assets/hooks/useDebounce.tsx";
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import TextField from '@mui/material/TextField';
+import { styled, Toolbar } from "@mui/material";
 
+const ToolbarStyled = styled(Toolbar)`
+    gap: ${({ theme }) => theme.spacing(1)};
+    justify-content: space-between;
+`;
 
-
-
-
-export interface DeskSearchProps {
+export interface DeskListToolbarProps {
   handleSearch: (value: string) => void
   locationId: string
 }
 
-export const DeskSearch = (props: DeskSearchProps) => {
+export const DeskListToolbar = (props: DeskListToolbarProps) => {
   const [searchValue, setSearchValue] = useState('')
   const [locations, setLocations] = useState<Location[]>([]);
 
@@ -44,13 +46,13 @@ export const DeskSearch = (props: DeskSearchProps) => {
   }
 
   return (
-    <>
-      <Select sx={{ width: "500px" }} value={props.locationId} onChange={handleLocationChange}>
+    <ToolbarStyled>
+      <Select sx={{ width: '300px' }} size="small" value={props.locationId} onChange={handleLocationChange}>
         {locations.map(location => (
           <MenuItem key={location.id} value={location.id}>{location.displayName}</MenuItem>
         ))}
-      </Select  >
-      <TextField sx={{ ml: "10px" }} onChange={handleInputChange} placeholder="Search for desk" />
-    </>
+      </Select>
+      <TextField size="small" onChange={handleInputChange} placeholder="Search for desk"/>
+    </ToolbarStyled>
   )
 }

@@ -29,13 +29,7 @@ export const DeskList = (props: DeskListProps) => {
   return (
     <MainLayout>
       <List sx={{
-        mt: "50px",
-        width: '100%',
-        maxWidth: 360,
-        bgcolor: 'background.paper',
-        position: 'relative',
-        overflow: 'auto',
-        maxHeight: "70vh",
+        width: '360px'
       }}>
         {desks.map((desk) => (
           <ListItem key={desk.id}>
