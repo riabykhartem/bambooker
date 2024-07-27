@@ -8,6 +8,8 @@ import MenuItem from '@mui/material/MenuItem';
 import TextField from '@mui/material/TextField';
 import { styled, Toolbar } from "@mui/material";
 import { DatePicker } from "@mui/x-date-pickers";
+import { Dayjs } from "dayjs";
+import dayjs from 'dayjs';
 
 const ToolbarStyled = styled(Toolbar)`
     gap: ${({ theme }) => theme.spacing(1)};
@@ -21,6 +23,7 @@ export interface DeskListToolbarProps {
 
 export const DeskListToolbar = (props: DeskListToolbarProps) => {
   const [searchValue, setSearchValue] = useState('')
+  const [date, setDate] = useState<Dayjs | null>(dayjs());
   const [locations, setLocations] = useState<Location[]>([]);
 
   const debouncedSearch = useDebounce(searchValue)
@@ -55,9 +58,14 @@ export const DeskListToolbar = (props: DeskListToolbarProps) => {
           <MenuItem key={location.id} value={location.id}>{location.displayName}</MenuItem>
         ))}
       </Select>
-      <DatePicker slotProps={{
-        textField: { size: 'small' },
-      }} label="Date"/>
+      <DatePicker
+        slotProps={{
+          textField: { size: 'small' },
+        }}
+        label="Date"
+        value={date}
+        onChange={setDate}
+      />
       <TextField size="small" onChange={handleInputChange} placeholder="Search for desk"/>
     </ToolbarStyled>
   )
