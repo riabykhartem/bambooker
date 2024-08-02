@@ -1,1574 +1,2301 @@
 [
   {
-    "id": "0",
-    "locationId": "c80ae63",
-    "name": "M42-0",
-    "features": [
-      1,
-      2,
-      4
-    ]
-  },
-  {
-    "id": "1",
-    "locationId": "c80ae63",
-    "name": "M42-1",
-    "features": [
-      0,
-      1,
-      2,
-      4,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "2",
-    "locationId": "c80ae63",
-    "name": "M42-2",
-    "features": [
-      0,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "3",
-    "locationId": "c80ae63",
-    "name": "M42-3",
-    "features": [
-      4,
-      6
-    ]
-  },
-  {
-    "id": "4",
-    "locationId": "c80ae63",
-    "name": "M42-4",
-    "features": [
-      2,
-      4
-    ]
-  },
-  {
-    "id": "5",
-    "locationId": "c80ae63",
-    "name": "M42-5",
-    "features": [
-      1,
-      2,
-      3,
-      6
-    ]
-  },
-  {
-    "id": "6",
-    "locationId": "c80ae63",
-    "name": "M42-6",
-    "features": [
-      1
-    ]
-  },
-  {
-    "id": "7",
-    "locationId": "c80ae63",
-    "name": "M42-7",
-    "features": [
-      0,
-      1,
-      3,
-      4
-    ]
-  },
-  {
-    "id": "8",
-    "locationId": "c80ae63",
-    "name": "M42-8",
-    "features": [
-      0,
-      3,
-      4,
-      5
-    ]
-  },
-  {
-    "id": "9",
-    "locationId": "c80ae63",
-    "name": "M42-9",
-    "features": [
-      2,
-      3,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "10",
-    "locationId": "c80ae63",
-    "name": "M42-10",
-    "features": [
-      1,
-      2,
-      4,
-      5
-    ]
-  },
-  {
-    "id": "11",
-    "locationId": "c80ae63",
-    "name": "M42-11",
-    "features": [
-      1,
-      2,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "12",
-    "locationId": "c80ae63",
-    "name": "M42-12",
-    "features": [
-      3,
-      4,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "13",
-    "locationId": "c80ae63",
-    "name": "M42-13",
-    "features": [
-      1,
-      2,
-      4
-    ]
-  },
-  {
-    "id": "14",
-    "locationId": "c80ae63",
-    "name": "M42-14",
-    "features": [
-      2,
-      4,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "15",
-    "locationId": "c80ae63",
-    "name": "M42-15",
-    "features": [
-      0,
-      1,
-      2,
-      4,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "16",
-    "locationId": "c80ae63",
-    "name": "M42-16",
-    "features": [
-      1,
-      2,
-      3,
-      4
-    ]
-  },
-  {
-    "id": "17",
-    "locationId": "c80ae63",
-    "name": "M42-17",
-    "features": [
-      0,
-      2,
-      6
-    ]
-  },
-  {
-    "id": "18",
-    "locationId": "c80ae63",
-    "name": "M42-18",
-    "features": [
-      0,
-      3,
-      4
-    ]
-  },
-  {
-    "id": "19",
-    "locationId": "c80ae63",
-    "name": "M42-19",
-    "features": [
-      1
-    ]
-  },
-  {
-    "id": "20",
-    "locationId": "c80ae63",
-    "name": "M42-20",
-    "features": [
-      2,
-      3,
-      6
-    ]
-  },
-  {
-    "id": "21",
-    "locationId": "c80ae63",
-    "name": "M42-21",
-    "features": [
-      4,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "22",
-    "locationId": "c80ae63",
-    "name": "M42-22",
-    "features": [
-      1,
-      2,
-      5
-    ]
-  },
-  {
-    "id": "23",
-    "locationId": "c80ae63",
-    "name": "M42-23",
-    "features": [
-      0,
-      1,
-      3,
-      4
-    ]
-  },
-  {
-    "id": "24",
-    "locationId": "c80ae63",
-    "name": "M42-24",
-    "features": [
-      2,
-      4,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "25",
-    "locationId": "c80ae63",
-    "name": "M42-25",
-    "features": [
-      2,
-      3,
-      6
-    ]
-  },
-  {
-    "id": "26",
-    "locationId": "c80ae63",
-    "name": "M42-26",
-    "features": [
-      1,
-      2,
-      4
-    ]
-  },
-  {
-    "id": "27",
-    "locationId": "c80ae63",
-    "name": "M42-27",
-    "features": [
-      0,
-      3,
-      4,
-      5
-    ]
-  },
-  {
-    "id": "28",
-    "locationId": "c80ae63",
-    "name": "M42-28",
-    "features": [
-      0,
-      3
-    ]
-  },
-  {
-    "id": "29",
-    "locationId": "c80ae63",
-    "name": "M42-29",
-    "features": [
-      0,
-      1,
-      3,
-      6
-    ]
-  },
-  {
-    "id": "30",
-    "locationId": "c80ae63",
-    "name": "M42-30",
-    "features": [
-      0,
-      2,
-      3,
-      4,
-      5
-    ]
-  },
-  {
-    "id": "31",
-    "locationId": "c80ae63",
-    "name": "M42-31",
-    "features": [
-      3,
-      4
-    ]
-  },
-  {
-    "id": "32",
-    "locationId": "c80ae63",
-    "name": "M42-32",
-    "features": [
-      1,
-      3,
-      4,
-      6
-    ]
-  },
-  {
-    "id": "33",
-    "locationId": "c80ae63",
-    "name": "M42-33",
-    "features": [
-      0,
-      2,
-      3,
-      5
-    ]
-  },
-  {
-    "id": "34",
-    "locationId": "c80ae63",
-    "name": "M42-34",
-    "features": [
-      0,
-      2,
-      4,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "35",
-    "locationId": "c80ae63",
-    "name": "M42-35",
-    "features": [
-      2,
-      4,
-      6
-    ]
-  },
-  {
-    "id": "36",
-    "locationId": "c80ae63",
-    "name": "M42-36",
-    "features": [
-      1,
-      3,
-      6
-    ]
-  },
-  {
-    "id": "37",
-    "locationId": "c80ae63",
-    "name": "M42-37",
-    "features": [
-      1,
-      3,
-      4,
-      5
-    ]
-  },
-  {
-    "id": "38",
-    "locationId": "c80ae63",
-    "name": "M42-38",
-    "features": [
-      0,
-      1,
-      2,
-      6
-    ]
-  },
-  {
-    "id": "39",
-    "locationId": "c80ae63",
-    "name": "M42-39",
-    "features": [
-      2,
-      4,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "40",
-    "locationId": "c80ae63",
-    "name": "M42-40",
-    "features": [
-      1,
-      2,
-      4,
-      5
-    ]
-  },
-  {
-    "id": "41",
-    "locationId": "c80ae63",
-    "name": "M42-41",
-    "features": [
-      3,
-      4,
-      5
-    ]
-  },
-  {
-    "id": "42",
-    "locationId": "c80ae63",
-    "name": "M42-42",
-    "features": [
-      0,
-      1,
-      2,
-      6
-    ]
-  },
-  {
-    "id": "43",
-    "locationId": "c80ae63",
-    "name": "M42-43",
-    "features": [
-      0,
-      2,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "44",
-    "locationId": "c80ae63",
-    "name": "M42-44",
-    "features": [
-      0
-    ]
-  },
-  {
-    "id": "45",
-    "locationId": "c80ae63",
-    "name": "M42-45",
-    "features": [
-      1,
-      2,
-      3,
-      4
-    ]
-  },
-  {
-    "id": "46",
-    "locationId": "c80ae63",
-    "name": "M42-46",
-    "features": [
-      0,
-      1,
-      2,
-      4,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "47",
-    "locationId": "c80ae63",
-    "name": "M42-47",
-    "features": [
-      0,
-      1,
-      2,
-      3,
-      6
-    ]
-  },
-  {
-    "id": "48",
-    "locationId": "c80ae63",
-    "name": "M42-48",
-    "features": [
-      1,
-      4,
-      6
-    ]
-  },
-  {
-    "id": "49",
-    "locationId": "c80ae63",
-    "name": "M42-49",
-    "features": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "50",
-    "locationId": "c80ae63",
-    "name": "M42-50",
-    "features": [
-      3,
-      5
-    ]
-  },
-  {
-    "id": "51",
-    "locationId": "c80ae63",
-    "name": "M42-51",
-    "features": [
-      0,
-      1,
-      2,
-      3,
-      4
-    ]
-  },
-  {
-    "id": "52",
-    "locationId": "c80ae63",
-    "name": "M42-52",
-    "features": [
-      0,
-      1,
-      4,
-      5
-    ]
-  },
-  {
-    "id": "53",
-    "locationId": "c80ae63",
-    "name": "M42-53",
-    "features": [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "54",
-    "locationId": "c80ae63",
-    "name": "M42-54",
-    "features": [
-      0,
-      2,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "55",
-    "locationId": "c80ae63",
-    "name": "M42-55",
-    "features": [
-      0,
-      1,
-      5
-    ]
-  },
-  {
-    "id": "56",
-    "locationId": "c80ae63",
-    "name": "M42-56",
-    "features": [
-      0,
-      2,
-      6
-    ]
-  },
-  {
-    "id": "57",
-    "locationId": "c80ae63",
-    "name": "M42-57",
-    "features": [
-      1,
-      2,
-      4,
-      6
-    ]
-  },
-  {
-    "id": "58",
-    "locationId": "c80ae63",
-    "name": "M42-58",
-    "features": [
-      0,
-      2,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "59",
-    "locationId": "c80ae63",
-    "name": "M42-59",
-    "features": [
-      0,
-      1,
-      2,
-      6
-    ]
-  },
-  {
-    "id": "60",
-    "locationId": "c80ae63",
-    "name": "M42-60",
-    "features": [
-      0,
-      2,
-      6
-    ]
-  },
-  {
-    "id": "61",
-    "locationId": "c80ae63",
-    "name": "M42-61",
-    "features": [
-      1
-    ]
-  },
-  {
-    "id": "62",
-    "locationId": "c80ae63",
-    "name": "M42-62",
-    "features": [
-      2,
-      3,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "63",
-    "locationId": "c80ae63",
-    "name": "M42-63",
-    "features": [
-      2,
-      3,
-      4,
-      6
-    ]
-  },
-  {
-    "id": "64",
-    "locationId": "c80ae63",
-    "name": "M42-64",
-    "features": [
-      1,
-      3,
-      4,
-      6
-    ]
-  },
-  {
-    "id": "65",
-    "locationId": "c80ae63",
-    "name": "M42-65",
-    "features": [
-      2,
-      4
-    ]
-  },
-  {
-    "id": "66",
-    "locationId": "c80ae63",
-    "name": "M42-66",
-    "features": [
-      0,
-      6
-    ]
-  },
-  {
-    "id": "67",
-    "locationId": "c80ae63",
-    "name": "M42-67",
-    "features": [
-      1,
-      2,
-      4
-    ]
-  },
-  {
-    "id": "68",
-    "locationId": "c80ae63",
-    "name": "M42-68",
-    "features": [
-      0,
-      2,
-      3,
-      5
-    ]
-  },
-  {
-    "id": "69",
-    "locationId": "c80ae63",
-    "name": "M42-69",
-    "features": [
-      2,
-      3,
-      4,
-      6
-    ]
-  },
-  {
-    "id": "70",
-    "locationId": "c80ae63",
-    "name": "M42-70",
-    "features": [
-      0,
-      1,
-      2,
-      6
-    ]
-  },
-  {
-    "id": "71",
-    "locationId": "c80ae63",
-    "name": "M42-71",
-    "features": [
-      1,
-      2,
-      4,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "72",
-    "locationId": "c80ae63",
-    "name": "M42-72",
-    "features": [
-      0,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "73",
-    "locationId": "c80ae63",
-    "name": "M42-73",
-    "features": [
-      0,
-      2,
-      3,
-      6
-    ]
-  },
-  {
-    "id": "74",
-    "locationId": "c80ae63",
-    "name": "M42-74",
-    "features": [
-      0,
-      1,
-      4,
-      6
-    ]
-  },
-  {
-    "id": "75",
-    "locationId": "c80ae63",
-    "name": "M42-75",
-    "features": [
-      2,
-      5
-    ]
-  },
-  {
-    "id": "76",
-    "locationId": "c80ae63",
-    "name": "M42-76",
-    "features": [
-      0,
-      2,
-      4,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "77",
-    "locationId": "c80ae63",
-    "name": "M42-77",
-    "features": [
-      1,
-      3,
-      6
-    ]
-  },
-  {
-    "id": "78",
-    "locationId": "c80ae63",
-    "name": "M42-78",
-    "features": [
-      1,
-      2,
-      4,
-      6
-    ]
-  },
-  {
-    "id": "79",
-    "locationId": "c80ae63",
-    "name": "M42-79",
-    "features": [
-      3,
-      4,
-      6
-    ]
-  },
-  {
-    "id": "80",
-    "locationId": "c80ae63",
-    "name": "M42-80",
-    "features": [
-      4,
-      6
-    ]
-  },
-  {
-    "id": "81",
-    "locationId": "c80ae63",
-    "name": "M42-81",
-    "features": [
-      0,
-      2,
-      3,
-      4,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "82",
-    "locationId": "c80ae63",
-    "name": "M42-82",
-    "features": [
-      0,
-      2,
-      3,
-      5
-    ]
-  },
-  {
-    "id": "83",
-    "locationId": "c80ae63",
-    "name": "M42-83",
-    "features": [
-      2,
-      3
-    ]
-  },
-  {
-    "id": "84",
-    "locationId": "c80ae63",
-    "name": "M42-84",
-    "features": [
-      0,
-      2,
-      4
-    ]
-  },
-  {
-    "id": "85",
-    "locationId": "c80ae63",
-    "name": "M42-85",
-    "features": [
-      6
-    ]
-  },
-  {
-    "id": "86",
-    "locationId": "c80ae63",
-    "name": "M42-86",
-    "features": [
-      1,
-      5
-    ]
-  },
-  {
-    "id": "87",
-    "locationId": "c80ae63",
-    "name": "M42-87",
-    "features": [
-      2,
-      3,
-      4,
-      6
-    ]
-  },
-  {
-    "id": "88",
-    "locationId": "c80ae63",
-    "name": "M42-88",
-    "features": [
-      0,
-      1,
-      2,
-      3
-    ]
-  },
-  {
-    "id": "89",
-    "locationId": "c80ae63",
-    "name": "M42-89",
-    "features": [
-      4
-    ]
-  },
-  {
-    "id": "90",
-    "locationId": "c80ae63",
-    "name": "M42-90",
-    "features": [
-      0,
-      1,
-      3
-    ]
-  },
-  {
-    "id": "91",
-    "locationId": "c80ae63",
-    "name": "M42-91",
-    "features": [
-      2,
-      5
-    ]
-  },
-  {
-    "id": "92",
-    "locationId": "c80ae63",
-    "name": "M42-92",
-    "features": [
-      0,
-      1,
-      2
-    ]
-  },
-  {
-    "id": "93",
-    "locationId": "c80ae63",
-    "name": "M42-93",
-    "features": [
-      2,
-      4,
-      6
-    ]
-  },
-  {
-    "id": "94",
-    "locationId": "c80ae63",
-    "name": "M42-94",
-    "features": [
-      0,
-      3,
-      4,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "95",
-    "locationId": "c80ae63",
-    "name": "M42-95",
-    "features": [
-      1,
-      2,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "96",
-    "locationId": "c80ae63",
-    "name": "M42-96",
-    "features": [
-      0
-    ]
-  },
-  {
-    "id": "97",
-    "locationId": "c80ae63",
-    "name": "M42-97",
-    "features": [
-      2,
-      4,
-      6
-    ]
-  },
-  {
-    "id": "98",
-    "locationId": "c80ae63",
-    "name": "M42-98",
-    "features": [
-      1,
-      3,
-      4,
-      5
-    ]
-  },
-  {
-    "id": "99",
-    "locationId": "c80ae63",
-    "name": "M42-99",
-    "features": [
-      0,
-      2,
-      4,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "0",
-    "locationId": "25d8c0f",
-    "name": "K01-0",
-    "features": [
-      0,
-      1,
-      4,
-      5
-    ]
-  },
-  {
-    "id": "1",
-    "locationId": "25d8c0f",
-    "name": "K01-1",
-    "features": [
-      5
-    ]
-  },
-  {
-    "id": "2",
-    "locationId": "25d8c0f",
-    "name": "K01-2",
-    "features": [
-      1,
-      3,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "3",
-    "locationId": "25d8c0f",
-    "name": "K01-3",
-    "features": [
-      1,
-      3,
-      4,
-      5
-    ]
-  },
-  {
-    "id": "4",
-    "locationId": "25d8c0f",
-    "name": "K01-4",
-    "features": [
-      0,
-      1,
-      2,
-      4,
-      6
-    ]
-  },
-  {
-    "id": "5",
-    "locationId": "25d8c0f",
-    "name": "K01-5",
-    "features": [
-      1,
-      2,
-      4,
-      5
-    ]
-  },
-  {
-    "id": "6",
-    "locationId": "25d8c0f",
-    "name": "K01-6",
-    "features": [
-      0,
-      1,
-      3,
-      5
-    ]
-  },
-  {
-    "id": "7",
-    "locationId": "25d8c0f",
-    "name": "K01-7",
-    "features": [
-      0,
-      2,
-      3,
-      6
-    ]
-  },
-  {
-    "id": "8",
-    "locationId": "25d8c0f",
-    "name": "K01-8",
-    "features": [
-      4
-    ]
-  },
-  {
-    "id": "9",
-    "locationId": "25d8c0f",
-    "name": "K01-9",
-    "features": [
-      0,
-      1,
-      2,
-      3,
-      6
-    ]
-  },
-  {
-    "id": "10",
-    "locationId": "25d8c0f",
-    "name": "K01-10",
-    "features": [
-      2,
-      5
-    ]
-  },
-  {
-    "id": "11",
-    "locationId": "25d8c0f",
-    "name": "K01-11",
-    "features": [
-      4,
-      6
-    ]
-  },
-  {
-    "id": "12",
-    "locationId": "25d8c0f",
-    "name": "K01-12",
-    "features": [
-      2,
-      3,
-      4,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "13",
-    "locationId": "25d8c0f",
-    "name": "K01-13",
-    "features": [
-      0,
-      2,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "14",
-    "locationId": "25d8c0f",
-    "name": "K01-14",
-    "features": [
-      0,
-      4,
-      6
-    ]
-  },
-  {
-    "id": "15",
-    "locationId": "25d8c0f",
-    "name": "K01-15",
-    "features": [
-      0,
-      1,
-      2,
-      4,
-      5
-    ]
-  },
-  {
-    "id": "16",
-    "locationId": "25d8c0f",
-    "name": "K01-16",
-    "features": [
-      0,
-      1,
-      2,
-      4,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "17",
-    "locationId": "25d8c0f",
-    "name": "K01-17",
-    "features": [
-      2
-    ]
-  },
-  {
-    "id": "18",
-    "locationId": "25d8c0f",
-    "name": "K01-18",
-    "features": [
-      0,
-      2,
-      3,
-      4,
-      6
-    ]
-  },
-  {
-    "id": "19",
-    "locationId": "25d8c0f",
-    "name": "K01-19",
-    "features": [
-      0,
-      3,
-      6
-    ]
-  },
-  {
-    "id": "20",
-    "locationId": "25d8c0f",
-    "name": "K01-20",
-    "features": [
-      0,
-      3,
-      4,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "21",
-    "locationId": "25d8c0f",
-    "name": "K01-21",
-    "features": [
-      1,
-      2,
-      3,
-      4,
-      5
-    ]
-  },
-  {
-    "id": "22",
-    "locationId": "25d8c0f",
-    "name": "K01-22",
-    "features": [
-      1,
-      2,
-      4,
-      6
-    ]
-  },
-  {
-    "id": "23",
-    "locationId": "25d8c0f",
-    "name": "K01-23",
-    "features": [
-      1,
-      2,
-      4
-    ]
-  },
-  {
-    "id": "24",
-    "locationId": "25d8c0f",
-    "name": "K01-24",
-    "features": [
-      0,
-      2,
-      3,
-      4,
-      6
-    ]
-  },
-  {
-    "id": "25",
-    "locationId": "25d8c0f",
-    "name": "K01-25",
-    "features": [
-      0,
-      1,
-      3,
-      4
-    ]
-  },
-  {
-    "id": "26",
-    "locationId": "25d8c0f",
-    "name": "K01-26",
-    "features": [
-      0,
-      1,
-      3,
-      4,
-      6
-    ]
-  },
-  {
-    "id": "27",
-    "locationId": "25d8c0f",
-    "name": "K01-27",
-    "features": [
-      0,
-      1,
-      2,
-      4,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "28",
-    "locationId": "25d8c0f",
-    "name": "K01-28",
-    "features": [
-      1,
-      3,
-      5
-    ]
-  },
-  {
-    "id": "29",
-    "locationId": "25d8c0f",
-    "name": "K01-29",
-    "features": [
-      0,
-      2,
-      4,
-      6
-    ]
-  },
-  {
-    "id": "30",
-    "locationId": "25d8c0f",
-    "name": "K01-30",
-    "features": [
-      1,
-      3,
-      4
-    ]
-  },
-  {
-    "id": "31",
-    "locationId": "25d8c0f",
-    "name": "K01-31",
-    "features": [
-      0,
-      3,
-      6
-    ]
-  },
-  {
-    "id": "32",
-    "locationId": "25d8c0f",
-    "name": "K01-32",
-    "features": [
-      0,
-      1,
-      3,
-      4,
-      6
-    ]
-  },
-  {
-    "id": "33",
-    "locationId": "25d8c0f",
-    "name": "K01-33",
-    "features": [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "34",
-    "locationId": "25d8c0f",
-    "name": "K01-34",
-    "features": [
-      1,
-      4,
-      6
-    ]
-  },
-  {
-    "id": "35",
-    "locationId": "25d8c0f",
-    "name": "K01-35",
-    "features": [
-      2,
-      5
-    ]
-  },
-  {
-    "id": "36",
-    "locationId": "25d8c0f",
-    "name": "K01-36",
-    "features": [
-      1,
-      2,
-      3,
-      4,
-      5
-    ]
-  },
-  {
-    "id": "37",
-    "locationId": "25d8c0f",
-    "name": "K01-37",
-    "features": [
-      0,
-      1,
-      2,
-      4,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "38",
-    "locationId": "25d8c0f",
-    "name": "K01-38",
-    "features": [
-      1,
-      2,
-      5
-    ]
-  },
-  {
-    "id": "39",
-    "locationId": "25d8c0f",
-    "name": "K01-39",
-    "features": [
-      2,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "40",
-    "locationId": "25d8c0f",
-    "name": "K01-40",
-    "features": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "41",
-    "locationId": "25d8c0f",
-    "name": "K01-41",
-    "features": [
-      0,
-      1,
-      3,
-      5,
-      6
-    ]
-  },
-  {
-    "id": "42",
-    "locationId": "25d8c0f",
-    "name": "K01-42",
-    "features": [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5
-    ]
-  },
-  {
-    "id": "43",
-    "locationId": "25d8c0f",
-    "name": "K01-43",
-    "features": [
-      0,
-      1,
-      2,
-      4
-    ]
-  },
-  {
-    "id": "44",
-    "locationId": "25d8c0f",
-    "name": "K01-44",
-    "features": [
-      3
-    ]
-  },
-  {
-    "id": "45",
-    "locationId": "25d8c0f",
-    "name": "K01-45",
-    "features": [
-      0,
-      4,
-      5
-    ]
-  },
-  {
-    "id": "46",
-    "locationId": "25d8c0f",
-    "name": "K01-46",
-    "features": [
-      2,
-      3,
-      4
-    ]
-  },
-  {
-    "id": "47",
-    "locationId": "25d8c0f",
-    "name": "K01-47",
-    "features": [
-      2,
-      5
-    ]
-  }
+      "id": "0",
+      "locationId": "c80ae63",
+      "name": "M42-0",
+      "features": [
+          3,
+          4,
+          5
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "1",
+      "locationId": "c80ae63",
+      "name": "M42-1",
+      "features": [
+          0,
+          1,
+          4
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "2",
+      "locationId": "c80ae63",
+      "name": "M42-2",
+      "features": [
+          2,
+          3
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "3",
+      "locationId": "c80ae63",
+      "name": "M42-3",
+      "features": [
+          0,
+          1,
+          3,
+          5
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "4",
+      "locationId": "c80ae63",
+      "name": "M42-4",
+      "features": [
+          1,
+          3,
+          4,
+          5
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "5",
+      "locationId": "c80ae63",
+      "name": "M42-5",
+      "features": [
+          0,
+          1,
+          2,
+          4
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "6",
+      "locationId": "c80ae63",
+      "name": "M42-6",
+      "features": [
+          0,
+          1,
+          4,
+          5,
+          6
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "7",
+      "locationId": "c80ae63",
+      "name": "M42-7",
+      "features": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "8",
+      "locationId": "c80ae63",
+      "name": "M42-8",
+      "features": [
+          0,
+          1,
+          2,
+          4,
+          5
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "9",
+      "locationId": "c80ae63",
+      "name": "M42-9",
+      "features": [
+          0,
+          3,
+          5,
+          6
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "10",
+      "locationId": "c80ae63",
+      "name": "M42-10",
+      "features": [
+          1,
+          2,
+          5
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "11",
+      "locationId": "c80ae63",
+      "name": "M42-11",
+      "features": [
+          0,
+          2,
+          3,
+          4
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "12",
+      "locationId": "c80ae63",
+      "name": "M42-12",
+      "features": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "13",
+      "locationId": "c80ae63",
+      "name": "M42-13",
+      "features": [
+          0,
+          1,
+          3,
+          5
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "14",
+      "locationId": "c80ae63",
+      "name": "M42-14",
+      "features": [
+          1,
+          2,
+          6
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "15",
+      "locationId": "c80ae63",
+      "name": "M42-15",
+      "features": [
+          0,
+          1,
+          2,
+          3
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "16",
+      "locationId": "c80ae63",
+      "name": "M42-16",
+      "features": [
+          0,
+          1,
+          4,
+          5
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "17",
+      "locationId": "c80ae63",
+      "name": "M42-17",
+      "features": [
+          2,
+          4,
+          5
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "18",
+      "locationId": "c80ae63",
+      "name": "M42-18",
+      "features": [
+          0,
+          1,
+          2,
+          5,
+          6
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "19",
+      "locationId": "c80ae63",
+      "name": "M42-19",
+      "features": [
+          0,
+          3,
+          5
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "20",
+      "locationId": "c80ae63",
+      "name": "M42-20",
+      "features": [
+          1,
+          4,
+          5,
+          6
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "21",
+      "locationId": "c80ae63",
+      "name": "M42-21",
+      "features": [
+          0,
+          1,
+          4,
+          5,
+          6
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "22",
+      "locationId": "c80ae63",
+      "name": "M42-22",
+      "features": [
+          0,
+          2,
+          3,
+          5
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "23",
+      "locationId": "c80ae63",
+      "name": "M42-23",
+      "features": [
+          0,
+          2,
+          4,
+          5
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "24",
+      "locationId": "c80ae63",
+      "name": "M42-24",
+      "features": [
+          0,
+          2,
+          6
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "25",
+      "locationId": "c80ae63",
+      "name": "M42-25",
+      "features": [
+          1,
+          3,
+          4,
+          6
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "26",
+      "locationId": "c80ae63",
+      "name": "M42-26",
+      "features": [
+          1,
+          6
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "27",
+      "locationId": "c80ae63",
+      "name": "M42-27",
+      "features": [
+          0,
+          1,
+          3,
+          4,
+          6
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "28",
+      "locationId": "c80ae63",
+      "name": "M42-28",
+      "features": [
+          0,
+          1,
+          3,
+          6
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "29",
+      "locationId": "c80ae63",
+      "name": "M42-29",
+      "features": [],
+      "isAvailable": false
+  },
+  {
+      "id": "30",
+      "locationId": "c80ae63",
+      "name": "M42-30",
+      "features": [
+          0,
+          4,
+          5
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "31",
+      "locationId": "c80ae63",
+      "name": "M42-31",
+      "features": [
+          1,
+          2,
+          3,
+          4,
+          5
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "32",
+      "locationId": "c80ae63",
+      "name": "M42-32",
+      "features": [
+          2,
+          4,
+          6
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "33",
+      "locationId": "c80ae63",
+      "name": "M42-33",
+      "features": [
+          6
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "34",
+      "locationId": "c80ae63",
+      "name": "M42-34",
+      "features": [
+          3,
+          4,
+          5,
+          6
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "35",
+      "locationId": "c80ae63",
+      "name": "M42-35",
+      "features": [
+          0,
+          2,
+          3,
+          4,
+          5
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "36",
+      "locationId": "c80ae63",
+      "name": "M42-36",
+      "features": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "37",
+      "locationId": "c80ae63",
+      "name": "M42-37",
+      "features": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "38",
+      "locationId": "c80ae63",
+      "name": "M42-38",
+      "features": [
+          3,
+          4,
+          6
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "39",
+      "locationId": "c80ae63",
+      "name": "M42-39",
+      "features": [
+          4,
+          5,
+          6
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "40",
+      "locationId": "c80ae63",
+      "name": "M42-40",
+      "features": [
+          0,
+          3,
+          5,
+          6
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "41",
+      "locationId": "c80ae63",
+      "name": "M42-41",
+      "features": [
+          0,
+          2,
+          3
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "42",
+      "locationId": "c80ae63",
+      "name": "M42-42",
+      "features": [
+          2,
+          3,
+          4,
+          6
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "43",
+      "locationId": "c80ae63",
+      "name": "M42-43",
+      "features": [
+          1,
+          4,
+          5
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "44",
+      "locationId": "c80ae63",
+      "name": "M42-44",
+      "features": [
+          4,
+          5,
+          6
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "45",
+      "locationId": "c80ae63",
+      "name": "M42-45",
+      "features": [
+          3,
+          4,
+          5
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "46",
+      "locationId": "c80ae63",
+      "name": "M42-46",
+      "features": [
+          2,
+          3,
+          4,
+          6
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "47",
+      "locationId": "c80ae63",
+      "name": "M42-47",
+      "features": [
+          0,
+          1,
+          2,
+          4,
+          6
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "48",
+      "locationId": "c80ae63",
+      "name": "M42-48",
+      "features": [
+          2,
+          3,
+          4,
+          6
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "49",
+      "locationId": "c80ae63",
+      "name": "M42-49",
+      "features": [
+          0,
+          1,
+          3,
+          4,
+          6
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "50",
+      "locationId": "c80ae63",
+      "name": "M42-50",
+      "features": [
+          3,
+          4,
+          5
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "51",
+      "locationId": "c80ae63",
+      "name": "M42-51",
+      "features": [
+          1
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "52",
+      "locationId": "c80ae63",
+      "name": "M42-52",
+      "features": [
+          1,
+          3,
+          4
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "53",
+      "locationId": "c80ae63",
+      "name": "M42-53",
+      "features": [
+          0,
+          1,
+          2,
+          3,
+          5
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "54",
+      "locationId": "c80ae63",
+      "name": "M42-54",
+      "features": [
+          2,
+          3,
+          4,
+          5
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "55",
+      "locationId": "c80ae63",
+      "name": "M42-55",
+      "features": [
+          1,
+          4,
+          5
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "56",
+      "locationId": "c80ae63",
+      "name": "M42-56",
+      "features": [
+          0,
+          3,
+          5,
+          6
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "57",
+      "locationId": "c80ae63",
+      "name": "M42-57",
+      "features": [
+          1,
+          2,
+          3,
+          5,
+          6
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "58",
+      "locationId": "c80ae63",
+      "name": "M42-58",
+      "features": [
+          0,
+          2,
+          5,
+          6
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "59",
+      "locationId": "c80ae63",
+      "name": "M42-59",
+      "features": [
+          0,
+          1,
+          4,
+          5,
+          6
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "60",
+      "locationId": "c80ae63",
+      "name": "M42-60",
+      "features": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "61",
+      "locationId": "c80ae63",
+      "name": "M42-61",
+      "features": [
+          3
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "62",
+      "locationId": "c80ae63",
+      "name": "M42-62",
+      "features": [
+          0,
+          1,
+          3
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "63",
+      "locationId": "c80ae63",
+      "name": "M42-63",
+      "features": [
+          2
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "64",
+      "locationId": "c80ae63",
+      "name": "M42-64",
+      "features": [
+          4,
+          5
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "65",
+      "locationId": "c80ae63",
+      "name": "M42-65",
+      "features": [
+          0,
+          1,
+          2,
+          3,
+          4
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "66",
+      "locationId": "c80ae63",
+      "name": "M42-66",
+      "features": [
+          0,
+          6
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "67",
+      "locationId": "c80ae63",
+      "name": "M42-67",
+      "features": [
+          1,
+          3,
+          4
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "68",
+      "locationId": "c80ae63",
+      "name": "M42-68",
+      "features": [
+          1,
+          2
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "69",
+      "locationId": "c80ae63",
+      "name": "M42-69",
+      "features": [
+          2,
+          5
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "70",
+      "locationId": "c80ae63",
+      "name": "M42-70",
+      "features": [
+          4,
+          6
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "71",
+      "locationId": "c80ae63",
+      "name": "M42-71",
+      "features": [
+          3
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "72",
+      "locationId": "c80ae63",
+      "name": "M42-72",
+      "features": [
+          0,
+          1,
+          2,
+          3,
+          6
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "73",
+      "locationId": "c80ae63",
+      "name": "M42-73",
+      "features": [
+          4,
+          5,
+          6
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "74",
+      "locationId": "c80ae63",
+      "name": "M42-74",
+      "features": [
+          5
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "75",
+      "locationId": "c80ae63",
+      "name": "M42-75",
+      "features": [
+          2,
+          3,
+          5
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "76",
+      "locationId": "c80ae63",
+      "name": "M42-76",
+      "features": [
+          0,
+          2,
+          4,
+          5
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "77",
+      "locationId": "c80ae63",
+      "name": "M42-77",
+      "features": [
+          1,
+          4,
+          5,
+          6
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "78",
+      "locationId": "c80ae63",
+      "name": "M42-78",
+      "features": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          6
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "79",
+      "locationId": "c80ae63",
+      "name": "M42-79",
+      "features": [
+          0,
+          2,
+          3,
+          5,
+          6
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "80",
+      "locationId": "c80ae63",
+      "name": "M42-80",
+      "features": [
+          0,
+          3,
+          5
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "81",
+      "locationId": "c80ae63",
+      "name": "M42-81",
+      "features": [
+          2,
+          3,
+          6
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "82",
+      "locationId": "c80ae63",
+      "name": "M42-82",
+      "features": [
+          0,
+          1,
+          2,
+          3
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "83",
+      "locationId": "c80ae63",
+      "name": "M42-83",
+      "features": [
+          1,
+          2,
+          3,
+          4
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "84",
+      "locationId": "c80ae63",
+      "name": "M42-84",
+      "features": [
+          0,
+          1,
+          5
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "85",
+      "locationId": "c80ae63",
+      "name": "M42-85",
+      "features": [
+          2,
+          3,
+          4,
+          5,
+          6
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "86",
+      "locationId": "c80ae63",
+      "name": "M42-86",
+      "features": [
+          0,
+          1,
+          6
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "87",
+      "locationId": "c80ae63",
+      "name": "M42-87",
+      "features": [
+          1,
+          2,
+          3
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "88",
+      "locationId": "c80ae63",
+      "name": "M42-88",
+      "features": [
+          1,
+          2,
+          5
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "89",
+      "locationId": "c80ae63",
+      "name": "M42-89",
+      "features": [
+          1,
+          2,
+          5
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "90",
+      "locationId": "c80ae63",
+      "name": "M42-90",
+      "features": [
+          0,
+          1,
+          2,
+          5,
+          6
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "91",
+      "locationId": "c80ae63",
+      "name": "M42-91",
+      "features": [
+          0,
+          2,
+          4
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "92",
+      "locationId": "c80ae63",
+      "name": "M42-92",
+      "features": [
+          3
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "93",
+      "locationId": "c80ae63",
+      "name": "M42-93",
+      "features": [
+          1,
+          2,
+          6
+      ],
+      "isAvailable": false
+  },
+  {
+      "id": "94",
+      "locationId": "c80ae63",
+      "name": "M42-94",
+      "features": [
+          0,
+          3,
+          4,
+          5,
+          6
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "95",
+      "locationId": "c80ae63",
+      "name": "M42-95",
+      "features": [
+          2,
+          3,
+          4,
+          5,
+          6
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "96",
+      "locationId": "c80ae63",
+      "name": "M42-96",
+      "features": [
+          0,
+          1,
+          4,
+          6
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "97",
+      "locationId": "c80ae63",
+      "name": "M42-97",
+      "features": [
+          2,
+          3,
+          4
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "98",
+      "locationId": "c80ae63",
+      "name": "M42-98",
+      "features": [
+          1,
+          2,
+          3,
+          4,
+          5
+      ],
+      "isAvailable": true
+  },
+  {
+      "id": "99",
+      "locationId": "c80ae63",
+      "name": "M42-99",
+      "features": [
+          1,
+          3
+      ],
+      "isAvailable": true
+  },
+    {
+        "id": "0",
+        "locationId": "25d8c0f",
+        "name": "K01-0",
+        "features": [
+            3,
+            6
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "1",
+        "locationId": "25d8c0f",
+        "name": "K01-1",
+        "features": [
+            1,
+            2,
+            3,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "2",
+        "locationId": "25d8c0f",
+        "name": "K01-2",
+        "features": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "3",
+        "locationId": "25d8c0f",
+        "name": "K01-3",
+        "features": [
+            0,
+            1,
+            4,
+            5,
+            6
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "4",
+        "locationId": "25d8c0f",
+        "name": "K01-4",
+        "features": [
+            1,
+            5,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "5",
+        "locationId": "25d8c0f",
+        "name": "K01-5",
+        "features": [
+            1,
+            2,
+            4
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "6",
+        "locationId": "25d8c0f",
+        "name": "K01-6",
+        "features": [
+            1,
+            2,
+            3
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "7",
+        "locationId": "25d8c0f",
+        "name": "K01-7",
+        "features": [
+            1,
+            3,
+            5
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "8",
+        "locationId": "25d8c0f",
+        "name": "K01-8",
+        "features": [
+            0,
+            5
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "9",
+        "locationId": "25d8c0f",
+        "name": "K01-9",
+        "features": [
+            1,
+            2,
+            3,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "10",
+        "locationId": "25d8c0f",
+        "name": "K01-10",
+        "features": [
+            0,
+            1,
+            2,
+            4,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "11",
+        "locationId": "25d8c0f",
+        "name": "K01-11",
+        "features": [
+            0,
+            1,
+            4,
+            5,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "12",
+        "locationId": "25d8c0f",
+        "name": "K01-12",
+        "features": [
+            0,
+            2,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "13",
+        "locationId": "25d8c0f",
+        "name": "K01-13",
+        "features": [
+            5
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "14",
+        "locationId": "25d8c0f",
+        "name": "K01-14",
+        "features": [
+            0,
+            1,
+            4,
+            5
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "15",
+        "locationId": "25d8c0f",
+        "name": "K01-15",
+        "features": [
+            1,
+            2,
+            3,
+            5,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "16",
+        "locationId": "25d8c0f",
+        "name": "K01-16",
+        "features": [
+            0,
+            1,
+            2,
+            3,
+            4
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "17",
+        "locationId": "25d8c0f",
+        "name": "K01-17",
+        "features": [
+            1,
+            5,
+            6
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "18",
+        "locationId": "25d8c0f",
+        "name": "K01-18",
+        "features": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "19",
+        "locationId": "25d8c0f",
+        "name": "K01-19",
+        "features": [
+            0,
+            2,
+            3,
+            5
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "20",
+        "locationId": "25d8c0f",
+        "name": "K01-20",
+        "features": [
+            0,
+            2,
+            3,
+            4
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "21",
+        "locationId": "25d8c0f",
+        "name": "K01-21",
+        "features": [
+            0,
+            1,
+            3,
+            5
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "22",
+        "locationId": "25d8c0f",
+        "name": "K01-22",
+        "features": [
+            2,
+            5,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "23",
+        "locationId": "25d8c0f",
+        "name": "K01-23",
+        "features": [
+            3,
+            5,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "24",
+        "locationId": "25d8c0f",
+        "name": "K01-24",
+        "features": [
+            4,
+            5
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "25",
+        "locationId": "25d8c0f",
+        "name": "K01-25",
+        "features": [
+            6
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "26",
+        "locationId": "25d8c0f",
+        "name": "K01-26",
+        "features": [
+            0,
+            1,
+            3,
+            4
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "27",
+        "locationId": "25d8c0f",
+        "name": "K01-27",
+        "features": [
+            0,
+            2,
+            4,
+            5,
+            6
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "28",
+        "locationId": "25d8c0f",
+        "name": "K01-28",
+        "features": [
+            0,
+            2,
+            3,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "29",
+        "locationId": "25d8c0f",
+        "name": "K01-29",
+        "features": [
+            2,
+            4
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "30",
+        "locationId": "25d8c0f",
+        "name": "K01-30",
+        "features": [
+            0,
+            2,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "31",
+        "locationId": "25d8c0f",
+        "name": "K01-31",
+        "features": [
+            0,
+            2,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "32",
+        "locationId": "25d8c0f",
+        "name": "K01-32",
+        "features": [
+            4,
+            5,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "33",
+        "locationId": "25d8c0f",
+        "name": "K01-33",
+        "features": [
+            0,
+            1,
+            3
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "34",
+        "locationId": "25d8c0f",
+        "name": "K01-34",
+        "features": [
+            2,
+            5,
+            6
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "35",
+        "locationId": "25d8c0f",
+        "name": "K01-35",
+        "features": [
+            1,
+            4,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "36",
+        "locationId": "25d8c0f",
+        "name": "K01-36",
+        "features": [
+            0,
+            3,
+            4,
+            5,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "37",
+        "locationId": "25d8c0f",
+        "name": "K01-37",
+        "features": [
+            1,
+            2
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "38",
+        "locationId": "25d8c0f",
+        "name": "K01-38",
+        "features": [
+            2,
+            4
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "39",
+        "locationId": "25d8c0f",
+        "name": "K01-39",
+        "features": [
+            1,
+            2,
+            3
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "40",
+        "locationId": "25d8c0f",
+        "name": "K01-40",
+        "features": [
+            0,
+            5
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "41",
+        "locationId": "25d8c0f",
+        "name": "K01-41",
+        "features": [
+            0,
+            1
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "42",
+        "locationId": "25d8c0f",
+        "name": "K01-42",
+        "features": [
+            0,
+            1,
+            4,
+            5
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "43",
+        "locationId": "25d8c0f",
+        "name": "K01-43",
+        "features": [
+            2,
+            3,
+            5
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "44",
+        "locationId": "25d8c0f",
+        "name": "K01-44",
+        "features": [
+            1,
+            2,
+            3,
+            6
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "45",
+        "locationId": "25d8c0f",
+        "name": "K01-45",
+        "features": [
+            0,
+            4
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "46",
+        "locationId": "25d8c0f",
+        "name": "K01-46",
+        "features": [
+            1,
+            3,
+            4,
+            6
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "47",
+        "locationId": "25d8c0f",
+        "name": "K01-47",
+        "features": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "48",
+        "locationId": "25d8c0f",
+        "name": "K01-48",
+        "features": [
+            1,
+            5,
+            6
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "49",
+        "locationId": "25d8c0f",
+        "name": "K01-49",
+        "features": [
+            0,
+            1,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "50",
+        "locationId": "25d8c0f",
+        "name": "K01-50",
+        "features": [
+            0,
+            2
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "51",
+        "locationId": "25d8c0f",
+        "name": "K01-51",
+        "features": [
+            3,
+            5,
+            6
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "52",
+        "locationId": "25d8c0f",
+        "name": "K01-52",
+        "features": [
+            0,
+            1,
+            2,
+            3,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "53",
+        "locationId": "25d8c0f",
+        "name": "K01-53",
+        "features": [
+            1,
+            2,
+            3,
+            4,
+            6
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "54",
+        "locationId": "25d8c0f",
+        "name": "K01-54",
+        "features": [
+            3,
+            5,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "55",
+        "locationId": "25d8c0f",
+        "name": "K01-55",
+        "features": [
+            0,
+            4,
+            5
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "56",
+        "locationId": "25d8c0f",
+        "name": "K01-56",
+        "features": [
+            4
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "57",
+        "locationId": "25d8c0f",
+        "name": "K01-57",
+        "features": [
+            1,
+            3,
+            5
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "58",
+        "locationId": "25d8c0f",
+        "name": "K01-58",
+        "features": [
+            0,
+            4,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "59",
+        "locationId": "25d8c0f",
+        "name": "K01-59",
+        "features": [
+            0
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "60",
+        "locationId": "25d8c0f",
+        "name": "K01-60",
+        "features": [
+            3,
+            6
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "61",
+        "locationId": "25d8c0f",
+        "name": "K01-61",
+        "features": [
+            0,
+            1,
+            2,
+            3,
+            4
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "62",
+        "locationId": "25d8c0f",
+        "name": "K01-62",
+        "features": [
+            0,
+            4
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "63",
+        "locationId": "25d8c0f",
+        "name": "K01-63",
+        "features": [
+            1,
+            2,
+            5
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "64",
+        "locationId": "25d8c0f",
+        "name": "K01-64",
+        "features": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "65",
+        "locationId": "25d8c0f",
+        "name": "K01-65",
+        "features": [
+            1,
+            2,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "66",
+        "locationId": "25d8c0f",
+        "name": "K01-66",
+        "features": [
+            4,
+            6
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "67",
+        "locationId": "25d8c0f",
+        "name": "K01-67",
+        "features": [
+            0,
+            3,
+            4,
+            5
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "68",
+        "locationId": "25d8c0f",
+        "name": "K01-68",
+        "features": [
+            1
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "69",
+        "locationId": "25d8c0f",
+        "name": "K01-69",
+        "features": [
+            2,
+            4,
+            5,
+            6
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "70",
+        "locationId": "25d8c0f",
+        "name": "K01-70",
+        "features": [
+            0,
+            4,
+            6
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "71",
+        "locationId": "25d8c0f",
+        "name": "K01-71",
+        "features": [
+            0,
+            1,
+            2,
+            5,
+            6
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "72",
+        "locationId": "25d8c0f",
+        "name": "K01-72",
+        "features": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "73",
+        "locationId": "25d8c0f",
+        "name": "K01-73",
+        "features": [
+            1,
+            3,
+            6
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "74",
+        "locationId": "25d8c0f",
+        "name": "K01-74",
+        "features": [
+            0,
+            1,
+            2,
+            5,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "75",
+        "locationId": "25d8c0f",
+        "name": "K01-75",
+        "features": [
+            2,
+            3,
+            4
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "76",
+        "locationId": "25d8c0f",
+        "name": "K01-76",
+        "features": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "77",
+        "locationId": "25d8c0f",
+        "name": "K01-77",
+        "features": [
+            0,
+            3,
+            5
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "78",
+        "locationId": "25d8c0f",
+        "name": "K01-78",
+        "features": [
+            0,
+            2,
+            3,
+            5,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "79",
+        "locationId": "25d8c0f",
+        "name": "K01-79",
+        "features": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "80",
+        "locationId": "25d8c0f",
+        "name": "K01-80",
+        "features": [
+            0,
+            3,
+            4,
+            5
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "81",
+        "locationId": "25d8c0f",
+        "name": "K01-81",
+        "features": [
+            1,
+            5,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "82",
+        "locationId": "25d8c0f",
+        "name": "K01-82",
+        "features": [
+            0,
+            3,
+            5,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "83",
+        "locationId": "25d8c0f",
+        "name": "K01-83",
+        "features": [
+            2,
+            5,
+            6
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "84",
+        "locationId": "25d8c0f",
+        "name": "K01-84",
+        "features": [
+            4,
+            5
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "85",
+        "locationId": "25d8c0f",
+        "name": "K01-85",
+        "features": [
+            0,
+            1,
+            4
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "86",
+        "locationId": "25d8c0f",
+        "name": "K01-86",
+        "features": [
+            0,
+            1,
+            2,
+            4
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "87",
+        "locationId": "25d8c0f",
+        "name": "K01-87",
+        "features": [
+            0,
+            6
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "88",
+        "locationId": "25d8c0f",
+        "name": "K01-88",
+        "features": [
+            1,
+            2,
+            3,
+            5
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "89",
+        "locationId": "25d8c0f",
+        "name": "K01-89",
+        "features": [
+            2,
+            3
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "90",
+        "locationId": "25d8c0f",
+        "name": "K01-90",
+        "features": [
+            0,
+            1,
+            4
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "91",
+        "locationId": "25d8c0f",
+        "name": "K01-91",
+        "features": [
+            1,
+            5,
+            6
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "92",
+        "locationId": "25d8c0f",
+        "name": "K01-92",
+        "features": [
+            0,
+            3,
+            5
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "93",
+        "locationId": "25d8c0f",
+        "name": "K01-93",
+        "features": [
+            1,
+            3,
+            5
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "94",
+        "locationId": "25d8c0f",
+        "name": "K01-94",
+        "features": [
+            5,
+            6
+        ],
+        "isAvailable": true
+    },
+    {
+        "id": "95",
+        "locationId": "25d8c0f",
+        "name": "K01-95",
+        "features": [
+            2,
+            5,
+            6
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "96",
+        "locationId": "25d8c0f",
+        "name": "K01-96",
+        "features": [
+            1,
+            3,
+            4,
+            5,
+            6
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "97",
+        "locationId": "25d8c0f",
+        "name": "K01-97",
+        "features": [
+            1,
+            3,
+            4
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "98",
+        "locationId": "25d8c0f",
+        "name": "K01-98",
+        "features": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "isAvailable": false
+    },
+    {
+        "id": "99",
+        "locationId": "25d8c0f",
+        "name": "K01-99",
+        "features": [
+            2,
+            4,
+            5
+        ],
+        "isAvailable": false
+    }
 ]

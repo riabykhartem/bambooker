@@ -3,6 +3,7 @@ export interface Desk {
   name: string;
   locationId: string;
   features: DeskFeature[];
+  isAvailable: Boolean;
 }
 
 export enum DeskFeature {

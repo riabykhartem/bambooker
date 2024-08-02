@@ -5,7 +5,6 @@ import { useState } from 'react';
 import { AppBar, Toolbar } from "@mui/material";
 
 export const DesksPage = () => {
-  console.log("is rendering");
   const [searchValue, setSearchValue] = useState('')
 
   const { locationId } = useParams();
@@ -19,10 +18,10 @@ export const DesksPage = () => {
   return (
     <>
       <AppBar position="fixed" color="inherit">
-        <DeskListToolbar locationId={locationId} handleSearch={handleSearch}/>
+        <DeskListToolbar locationId={locationId} handleSearch={handleSearch} />
       </AppBar>
-      <Toolbar/>
-      <DeskList key={locationId} locationId={locationId} searchValue={searchValue}/>
+      <Toolbar />
+      <DeskList key={locationId} locationId={locationId} searchValue={searchValue} />
     </>
   )
 }
