@@ -2,11 +2,17 @@ import { DeskList } from '../components/DeskList/DeskList.tsx';
 import { useParams } from 'react-router-dom';
 import { DeskListToolbar } from '../components/DeskListToolbar/DeskListToolbar.tsx'
 import { useState } from 'react';
-import { AppBar, Toolbar } from "@mui/material";
+import { AppBar } from "@mui/material";
+import dayjs, { Dayjs } from 'dayjs';
+
 
 export const DesksPage = () => {
-  console.log("is rendering");
+  const today = dayjs(new Date())
   const [searchValue, setSearchValue] = useState('')
+  const [selectedDate, setSelectedDate] = useState<Dayjs | null>(today)
+  const handleDateChange = (e: any) => {
+    setSelectedDate(e)
+  }
 
   const { locationId } = useParams();
   if (!locationId)
@@ -19,10 +25,9 @@ export const DesksPage = () => {
   return (
     <>
       <AppBar position="fixed" color="inherit">
-        <DeskListToolbar locationId={locationId} handleSearch={handleSearch}/>
+        <DeskListToolbar locationId={locationId} handleDateChange={handleDateChange} handleSearch={handleSearch} selectedDate={selectedDate} />
       </AppBar>
-      <Toolbar/>
-      <DeskList key={locationId} locationId={locationId} searchValue={searchValue}/>
+      <DeskList key={locationId} locationId={locationId} searchValue={searchValue} />
     </>
   )
 }

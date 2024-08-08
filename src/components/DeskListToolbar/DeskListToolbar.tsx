@@ -7,6 +7,8 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import TextField from '@mui/material/TextField';
 import { styled, Toolbar } from "@mui/material";
+import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import { Dayjs } from 'dayjs'
 
 const ToolbarStyled = styled(Toolbar)`
     gap: ${({ theme }) => theme.spacing(1)};
@@ -16,6 +18,8 @@ const ToolbarStyled = styled(Toolbar)`
 export interface DeskListToolbarProps {
   handleSearch: (value: string) => void
   locationId: string
+  handleDateChange: (value: any) => void
+  selectedDate: object | null
 }
 
 export const DeskListToolbar = (props: DeskListToolbarProps) => {
@@ -52,7 +56,10 @@ export const DeskListToolbar = (props: DeskListToolbarProps) => {
           <MenuItem key={location.id} value={location.id}>{location.displayName}</MenuItem>
         ))}
       </Select>
-      <TextField size="small" onChange={handleInputChange} placeholder="Search for desk"/>
+      <DatePicker disablePast={true} label="Date" value={props.selectedDate || Dayjs}
+        onChange={props.handleDateChange}
+      />
+      <TextField size="small" onChange={handleInputChange} placeholder="Search for desk" />
     </ToolbarStyled>
   )
 }
