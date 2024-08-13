@@ -3,18 +3,13 @@ import { useParams } from 'react-router-dom';
 import { DeskListToolbar } from '../components/DeskListToolbar/DeskListToolbar.tsx'
 import { useState } from 'react';
 import { AppBar } from "@mui/material";
-import dayjs, { Dayjs } from 'dayjs';
 
 
 export const DesksPage = () => {
-  const today = dayjs(new Date())
-  const [searchValue, setSearchValue] = useState('')
-  const [selectedDate, setSelectedDate] = useState<Dayjs | null>(today)
-  const handleDateChange = (e: any) => {
-    setSelectedDate(e)
-  }
+  const { locationId } = useParams()
+  console.log(locationId);
 
-  const { locationId } = useParams();
+  const [searchValue, setSearchValue] = useState('')
   if (!locationId)
     throw new Error('locationId param is missing');
 
@@ -25,7 +20,7 @@ export const DesksPage = () => {
   return (
     <>
       <AppBar position="fixed" color="inherit">
-        <DeskListToolbar locationId={locationId} handleDateChange={handleDateChange} handleSearch={handleSearch} selectedDate={selectedDate} />
+        <DeskListToolbar locationId={locationId} handleSearch={handleSearch} />
       </AppBar>
       <DeskList key={locationId} locationId={locationId} searchValue={searchValue} />
     </>

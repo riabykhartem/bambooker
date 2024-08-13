@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getDesks } from '../../api/api';
+import { addAvailablility, getDesks } from '../../api/api';
 import { Desk } from '../../api/desk.model';
 import { MainLayout } from '../../layouts/MainLayout.tsx';
 import { DeskCard } from '../DeskCard/DeskCard.tsx';
@@ -13,16 +13,17 @@ export interface DeskListProps {
 
 export const DeskList = (props: DeskListProps) => {
 
-  console.log('DeskList is rendering...');
+  // console.log('DeskList is rendering...');
 
   const [desks, setDesks] = useState<Desk[]>([]);
 
-
+  const selectedDate = "2024-08-13"
   useEffect(() => {
     getDesks({ locationId: props.locationId, searchTerm: props.searchValue })
-      .then(results => {
-        setDesks(results);
-      });
+      .then(desklist => {
+        addAvailablility({ desklist, selectedDate })
+        setDesks(desklist)
+      })
 
   }, [props.locationId, props.searchValue]);
 

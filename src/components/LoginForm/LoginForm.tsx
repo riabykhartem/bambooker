@@ -10,7 +10,7 @@ const CardStyled = styled(Card)`
     top: 50%;
     transform: translate(-50%, -50%);
 
-    padding: ${({theme}) => theme.spacing(4)};
+    padding: ${({ theme }) => theme.spacing(4)};
 `;
 
 const FormStyled = styled('form')`
@@ -19,7 +19,7 @@ const FormStyled = styled('form')`
     display: flex;
     flex-direction: column;
 
-    gap: ${({theme}) => theme.spacing(4)};
+    gap: ${({ theme }) => theme.spacing(4)};
 `;
 
 export const LoginForm = () => {
@@ -49,7 +49,7 @@ export const LoginForm = () => {
 
     console.log('username and password', username, password);
 
-    loginMutation.mutate({username, password});
+    loginMutation.mutate({ username, password });
   }
 
   return (

@@ -2,7 +2,8 @@ import { Desk, DeskFeature } from './desk.model.ts';
 
 export const generateDesks = (count: number, locationId: string, namePrefix: string) => {
   const desks: Desk[] = [];
-  for (let i = 0; i < count; i++) {
+  let i = 0
+  for (; i < count; i++) {
     desks.push({
       id: i.toString(),
       locationId,
@@ -13,6 +14,23 @@ export const generateDesks = (count: number, locationId: string, namePrefix: str
 
   return desks;
 }
+
+export const generateDesks2 = (count: number, locationId: string, namePrefix: string) => {
+  const desks: Desk[] = [];
+
+  for (let i = 50; i < count; i++) {
+    desks.push({
+      id: i.toString(),
+      locationId,
+      name: `${namePrefix}${i-50}`,
+      features: generateFeaturesList(),
+    } as Desk);
+  }
+
+  return desks;
+}
+
+
 
 const allFeatures = [
   DeskFeature.TwoMonitors,

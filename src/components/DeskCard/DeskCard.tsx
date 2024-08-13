@@ -18,10 +18,9 @@ const FeaturesBox = styled(Box)`
     gap: ${({ theme }) => theme.spacing(1)};
 `;
 
-export interface DeskListItemProps extends Desk {
-}
 
-export const DeskCard = (props: DeskListItemProps) => {
+
+export const DeskCard = (props: Desk) => {
   return (
     <CardStyled>
       <DeskNameTypography variant="h6">{props.name}</DeskNameTypography>

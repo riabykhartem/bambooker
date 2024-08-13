@@ -2,7 +2,7 @@ import { Desk, DeskFeature } from './desk.model';
 import desks from './desks.data.json';
 import { Location } from './location.model';
 import { locations } from './locations.data';
-
+import reservations from './reservations.data.json'
 const validCredentials = [
   {username: 'user', password: 'user'},
 ];
@@ -18,6 +18,23 @@ export const login = (params: { username: string, password: string }) => {
     }, 1000);
   });
 }
+
+export const addAvailablility = (props:{ 
+  desklist: Desk[]
+  selectedDate: string
+}) => {
+  const reservedDesks = reservations.find((date) => date.reservationDate === props.selectedDate)?.reservedDesks
+  if(reservedDesks === undefined){ 
+    props.desklist.forEach(desk => {
+      desk.isAvailable = true
+    })
+  } else {
+    props.desklist.forEach(desk =>{
+      desk.isAvailable = reservedDesks.some(id => id === desk.id) ? false : true
+    })
+  }
+}
+
 
 export const getDesks = (params: {
   locationId: string;

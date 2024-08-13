@@ -8,7 +8,8 @@ import MenuItem from '@mui/material/MenuItem';
 import TextField from '@mui/material/TextField';
 import { styled, Toolbar } from "@mui/material";
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
-import { Dayjs } from 'dayjs'
+import dayjs, { Dayjs } from 'dayjs';
+
 
 const ToolbarStyled = styled(Toolbar)`
     gap: ${({ theme }) => theme.spacing(1)};
@@ -18,11 +19,13 @@ const ToolbarStyled = styled(Toolbar)`
 export interface DeskListToolbarProps {
   handleSearch: (value: string) => void
   locationId: string
-  handleDateChange: (value: any) => void
-  selectedDate: object | null
 }
 
 export const DeskListToolbar = (props: DeskListToolbarProps) => {
+  console.log(props.locationId);
+  // console.log("DeskListToolbar is rendering");
+  const today = dayjs()
+  const [selectedDate, setSelectedDate] = useState<Dayjs | null>(today)
   const [searchValue, setSearchValue] = useState('')
   const [locations, setLocations] = useState<Location[]>([]);
 
@@ -46,8 +49,18 @@ export const DeskListToolbar = (props: DeskListToolbarProps) => {
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     const q = e?.target?.value ?? '';
     setSearchValue(q);
-    // props.handleSearch(debouncedSearch);
   }
+
+  const handleDateChange = (e: Dayjs | null) => {
+    if (e) {
+      const formattedDate = e.format('MM-DD-YYYY');
+      console.log(props.locationId);
+      console.log(formattedDate);
+      setSelectedDate(e)
+      // navigate(`/${props.locationId}&${formattedDate}/desks`);
+    }
+  };
+
 
   return (
     <ToolbarStyled>
@@ -56,8 +69,8 @@ export const DeskListToolbar = (props: DeskListToolbarProps) => {
           <MenuItem key={location.id} value={location.id}>{location.displayName}</MenuItem>
         ))}
       </Select>
-      <DatePicker disablePast={true} label="Date" value={props.selectedDate || Dayjs}
-        onChange={props.handleDateChange}
+      <DatePicker disablePast={true} label="Date" value={selectedDate || null}
+        onChange={handleDateChange}
       />
       <TextField size="small" onChange={handleInputChange} placeholder="Search for desk" />
     </ToolbarStyled>

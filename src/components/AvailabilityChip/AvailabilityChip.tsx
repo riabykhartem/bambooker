@@ -1,7 +1,7 @@
 import { Chip } from '@mui/material';
 
 interface availabilityChipProps {
-    isAvailable: Boolean
+    isAvailable?: boolean
 }
 
 export const AvailabilityChip = (props: availabilityChipProps) => {
