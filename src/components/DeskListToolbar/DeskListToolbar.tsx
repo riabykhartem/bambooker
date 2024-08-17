@@ -19,13 +19,12 @@ const ToolbarStyled = styled(Toolbar)`
 export interface DeskListToolbarProps {
   handleSearch: (value: string) => void
   locationId: string
+  selectedDate: Dayjs | null
+  setSelectedDate: (value: Dayjs | null) => void
 }
 
 export const DeskListToolbar = (props: DeskListToolbarProps) => {
-  console.log(props.locationId);
   // console.log("DeskListToolbar is rendering");
-  const today = dayjs()
-  const [selectedDate, setSelectedDate] = useState<Dayjs | null>(today)
   const [searchValue, setSearchValue] = useState('')
   const [locations, setLocations] = useState<Location[]>([]);
 
@@ -51,15 +50,6 @@ export const DeskListToolbar = (props: DeskListToolbarProps) => {
     setSearchValue(q);
   }
 
-  const handleDateChange = (e: Dayjs | null) => {
-    if (e) {
-      const formattedDate = e.format('MM-DD-YYYY');
-      console.log(props.locationId);
-      console.log(formattedDate);
-      setSelectedDate(e)
-      // navigate(`/${props.locationId}&${formattedDate}/desks`);
-    }
-  };
 
 
   return (
@@ -69,8 +59,8 @@ export const DeskListToolbar = (props: DeskListToolbarProps) => {
           <MenuItem key={location.id} value={location.id}>{location.displayName}</MenuItem>
         ))}
       </Select>
-      <DatePicker disablePast={true} label="Date" value={selectedDate || null}
-        onChange={handleDateChange}
+      <DatePicker disablePast={true} label="Date" value={props.selectedDate || null}
+        onChange={e => props.setSelectedDate(e)}
       />
       <TextField size="small" onChange={handleInputChange} placeholder="Search for desk" />
     </ToolbarStyled>

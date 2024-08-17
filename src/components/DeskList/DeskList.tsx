@@ -1,14 +1,16 @@
 import { useEffect, useState } from 'react';
-import { addAvailablility, getDesks } from '../../api/api';
+import { getDesks } from '../../api/api';
 import { Desk } from '../../api/desk.model';
 import { MainLayout } from '../../layouts/MainLayout.tsx';
 import { DeskCard } from '../DeskCard/DeskCard.tsx';
 import { List, ListItem } from '@mui/material';
+import dayjs, { Dayjs } from 'dayjs';
 
 
 export interface DeskListProps {
-  locationId: string;
-  searchValue: string;
+  locationId: string,
+  searchValue: string,
+  selectedDate: Dayjs
 }
 
 export const DeskList = (props: DeskListProps) => {
@@ -17,15 +19,13 @@ export const DeskList = (props: DeskListProps) => {
 
   const [desks, setDesks] = useState<Desk[]>([]);
 
-  const selectedDate = "2024-08-13"
   useEffect(() => {
-    getDesks({ locationId: props.locationId, searchTerm: props.searchValue })
+    console.log("desklist rerendered");
+    getDesks({ locationId: props.locationId, searchTerm: props.searchValue, selectedDate: props.selectedDate })
       .then(desklist => {
-        addAvailablility({ desklist, selectedDate })
         setDesks(desklist)
       })
-
-  }, [props.locationId, props.searchValue]);
+  }, [props.locationId, props.searchValue, props.selectedDate]);
 
   return (
     <MainLayout>

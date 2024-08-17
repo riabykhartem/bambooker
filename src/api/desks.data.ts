@@ -2,8 +2,7 @@ import { Desk, DeskFeature } from './desk.model.ts';
 
 export const generateDesks = (count: number, locationId: string, namePrefix: string) => {
   const desks: Desk[] = [];
-  let i = 0
-  for (; i < count; i++) {
+  for (let i = 0; i < count; i++) {
     desks.push({
       id: i.toString(),
       locationId,
