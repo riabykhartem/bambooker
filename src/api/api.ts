@@ -3,7 +3,7 @@ import desks from './desks.data.json';
 import { Location } from './location.model';
 import { locations } from './locations.data';
 import { reservations } from './reservations.data'
-import { Dayjs } from 'dayjs';
+import dayjs, { Dayjs } from 'dayjs';
 
 const validCredentials = [
   {username: 'user', password: 'user'},
@@ -26,15 +26,16 @@ export const getDesks = (params: {
   locationId: string;
   searchTerm?: string;
   features?: DeskFeature[];
-  selectedDate: Dayjs
+  selectedDate?: Dayjs
 }) => {
+  const selectedDate = params.selectedDate?? dayjs()
   return new Promise<Desk[]>((resolve) => {
     setTimeout(() => {
       const results = desks
         .filter(d => d.locationId === params.locationId &&
           (!params.searchTerm || d.name.toLowerCase().includes(params.searchTerm.toLowerCase())) &&
           (!params.features || params.features.filter(f => d.features.some(df => df === f)).length === params.features.length))
-          .map(d => ({...d, isAvailable: !reservations.some(r => params.selectedDate.isSame(r.date, 'day') && r.deskId === d.id)}));
+          .map(d => ({...d, isAvailable: !reservations.some(r => selectedDate.isSame(r.date, 'day') && r.deskId === d.id)}));
 
       resolve(results);
     }, 100);

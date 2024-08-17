@@ -8,7 +8,7 @@ import dayjs, { Dayjs } from 'dayjs';
 
 export const DesksPage = () => {
   const { locationId } = useParams()
-  const [selectedDate, setSelectedDate] = useState<Dayjs | null>(dayjs())
+  const [selectedDate, setSelectedDate] = useState<Dayjs | null>(null)
   const [searchValue, setSearchValue] = useState('')
   if (!locationId)
     throw new Error('locationId param is missing');

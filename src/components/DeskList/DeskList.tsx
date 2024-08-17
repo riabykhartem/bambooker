@@ -10,7 +10,7 @@ import dayjs, { Dayjs } from 'dayjs';
 export interface DeskListProps {
   locationId: string,
   searchValue: string,
-  selectedDate: Dayjs
+  selectedDate: Dayjs | null
 }
 
 export const DeskList = (props: DeskListProps) => {
@@ -21,7 +21,7 @@ export const DeskList = (props: DeskListProps) => {
 
   useEffect(() => {
     console.log("desklist rerendered");
-    getDesks({ locationId: props.locationId, searchTerm: props.searchValue, selectedDate: props.selectedDate })
+    getDesks({ locationId: props.locationId, searchTerm: props.searchValue, selectedDate: props.selectedDate ?? undefined })
       .then(desklist => {
         setDesks(desklist)
       })

@@ -59,7 +59,7 @@ export const DeskListToolbar = (props: DeskListToolbarProps) => {
           <MenuItem key={location.id} value={location.id}>{location.displayName}</MenuItem>
         ))}
       </Select>
-      <DatePicker disablePast={true} label="Date" value={props.selectedDate || null}
+      <DatePicker disablePast={true} label="Date" value={props.selectedDate}
         onChange={e => props.setSelectedDate(e)}
       />
       <TextField size="small" onChange={handleInputChange} placeholder="Search for desk" />
