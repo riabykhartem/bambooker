@@ -8,7 +8,7 @@ import MenuItem from '@mui/material/MenuItem';
 import TextField from '@mui/material/TextField';
 import { styled, Toolbar } from "@mui/material";
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
-import dayjs, { Dayjs } from 'dayjs';
+import { Dayjs } from 'dayjs';
 
 
 const ToolbarStyled = styled(Toolbar)`
@@ -60,7 +60,11 @@ export const DeskListToolbar = (props: DeskListToolbarProps) => {
         ))}
       </Select>
       <DatePicker disablePast={true} label="Date" value={props.selectedDate}
-        onChange={e => props.setSelectedDate(e)}
+        onChange={e => props.setSelectedDate(e)} slotProps={{
+          textField: {
+            size: "small"
+          }
+        }}
       />
       <TextField size="small" onChange={handleInputChange} placeholder="Search for desk" />
     </ToolbarStyled>

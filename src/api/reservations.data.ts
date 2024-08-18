@@ -1,6 +1,6 @@
 import dayjs, { Dayjs } from 'dayjs';
-
-interface Reservation {
+//todo: split model and date
+export interface Reservation {
     id: string,
     deskId: string,
     date: Dayjs

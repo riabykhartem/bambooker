@@ -1,5 +1,5 @@
 import { Desk } from '../../api/desk.model.ts';
-import { Box, Card, styled, Typography } from '@mui/material';
+import { Box, Button, Card, styled, Typography } from '@mui/material';
 import { FeatureChip } from '../FeatureChip/FeatureChip.tsx';
 import { AvailabilityChip } from '../AvailabilityChip/AvailabilityChip.tsx';
 
@@ -9,7 +9,6 @@ const CardStyled = styled(Card)`
 `;
 
 const DeskNameTypography = styled(Typography)`
-    margin-bottom: ${({ theme }) => theme.spacing(2)};
 `;
 
 const FeaturesBox = styled(Box)`
@@ -18,12 +17,24 @@ const FeaturesBox = styled(Box)`
     gap: ${({ theme }) => theme.spacing(1)};
 `;
 
+const HeaderBox = styled(Box)`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: ${({ theme }) => theme.spacing(2)};
+`;
 
+type DeskCardProps = Desk & {
+  onReserveClick: (deskId: string) => void
+}
 
-export const DeskCard = (props: Desk) => {
+export const DeskCard = (props: DeskCardProps) => {
   return (
     <CardStyled>
-      <DeskNameTypography variant="h6">{props.name}</DeskNameTypography>
+      <HeaderBox>
+        <DeskNameTypography variant="h6">{props.name}</DeskNameTypography>
+        {props.isAvailable && <Button variant='contained' onClick={() => props.onReserveClick(props.id)}>reserve</Button>}
+      </HeaderBox>
       <FeaturesBox>
         {props.features.map(feature => (
           <FeatureChip key={feature} feature={feature} />

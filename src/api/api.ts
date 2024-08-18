@@ -2,7 +2,7 @@ import { Desk, DeskFeature } from './desk.model';
 import desks from './desks.data.json';
 import { Location } from './location.model';
 import { locations } from './locations.data';
-import { reservations } from './reservations.data'
+import { reservations, Reservation } from './reservations.data'
 import dayjs, { Dayjs } from 'dayjs';
 
 const validCredentials = [
@@ -48,4 +48,22 @@ export const getLocations = () => {
       resolve(locations);
     }, 100);
   });
+}
+
+export const addReservation = (props: {
+  deskId: string;
+  date: Dayjs
+}) =>{
+  const newReservation: Reservation = {
+    id: reservations.length.toString(),
+    deskId: props.deskId,
+    date: props.date
+  }
+  return new Promise<Reservation>((resolve) => {
+    setTimeout(() => {
+      reservations.push(newReservation)
+      resolve(newReservation);
+    }, 100);
+  });
+
 }
