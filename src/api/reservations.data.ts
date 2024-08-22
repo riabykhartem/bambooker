@@ -1,10 +1,5 @@
 import dayjs, { Dayjs } from 'dayjs';
-//todo: split model and date
-export interface Reservation {
-    id: string,
-    deskId: string,
-    date: Dayjs
-}
+import Reservation from './reservations.model'
 
 export const reservations: Reservation[] = [
     {

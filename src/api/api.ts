@@ -2,7 +2,8 @@ import { Desk, DeskFeature } from './desk.model';
 import desks from './desks.data.json';
 import { Location } from './location.model';
 import { locations } from './locations.data';
-import { reservations, Reservation } from './reservations.data'
+import { reservations } from './reservations.data'
+import Reservation from './reservations.model'
 import dayjs, { Dayjs } from 'dayjs';
 
 const validCredentials = [

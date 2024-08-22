@@ -25,7 +25,7 @@ const HeaderBox = styled(Box)`
 `;
 
 type DeskCardProps = Desk & {
-  onReserveClick: (deskId: string) => void
+  OnReserve: (deskId: string) => void
 }
 
 export const DeskCard = (props: DeskCardProps) => {
@@ -33,13 +33,13 @@ export const DeskCard = (props: DeskCardProps) => {
     <CardStyled>
       <HeaderBox>
         <DeskNameTypography variant="h6">{props.name}</DeskNameTypography>
-        {props.isAvailable && <Button variant='contained' onClick={() => props.onReserveClick(props.id)}>reserve</Button>}
+        {props.isAvailable && <Button variant='contained' onClick={() => props.OnReserve(props.id)}>reserve</Button>}
       </HeaderBox>
+      {props.isAvailable ?? <AvailabilityChip />}
       <FeaturesBox>
         {props.features.map(feature => (
           <FeatureChip key={feature} feature={feature} />
         ))}
-        <AvailabilityChip isAvailable={props.isAvailable} />
       </FeaturesBox>
     </CardStyled>
   )

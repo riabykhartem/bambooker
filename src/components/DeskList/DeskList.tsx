@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { addReservation, getDesks } from '../../api/api';
+import { getDesks } from '../../api/api';
 import { Desk } from '../../api/desk.model';
 import { MainLayout } from '../../layouts/MainLayout.tsx';
 import { DeskCard } from '../DeskCard/DeskCard.tsx';
@@ -17,8 +17,7 @@ export interface DeskListProps {
 export const DeskList = (props: DeskListProps) => {
   // console.log('DeskList is rendering...');
   const [desks, setDesks] = useState<Desk[]>([]);
-  const [dialogIsOpen, setDialogIsOpen] = useState(false);
-  const [selectedDesk, setSelectedDesk] = useState<string>('')
+  const [selectedDesk, setSelectedDesk] = useState<string | null>(null)
 
   useEffect(() => {
     console.log("desklist rerendered");
@@ -28,23 +27,12 @@ export const DeskList = (props: DeskListProps) => {
       })
   }, [props.locationId, props.searchValue, props.selectedDate]);
 
-  const handleOnReserve = (deskId: string) => {
+  const OnReserve = (deskId: string) => {
     setSelectedDesk(deskId)
-    setDialogIsOpen(true)
   }
 
-  const handleDialogClose = () => {
-    setDialogIsOpen(false)
-    setSelectedDesk('')
-  }
-
-  const handleConfirmButton = () => {
-    addReservation({ deskId: selectedDesk, date: props.selectedDate })
-      .then((res) => {
-        console.log(res);
-        setDialogIsOpen(false)
-      })
-
+  const onClose = () => {
+    setSelectedDesk(null)
   }
 
   return (
@@ -55,12 +43,12 @@ export const DeskList = (props: DeskListProps) => {
         }}>
           {desks.map((desk) => (
             <ListItem key={desk.id}>
-              <DeskCard {...desk} onReserveClick={handleOnReserve} />
+              <DeskCard {...desk} OnReserve={OnReserve} />
             </ListItem>
           ))}
         </List>
       </MainLayout>
-      <ReservationDialog dialogIsOpen={dialogIsOpen} handleConfirmButton={handleConfirmButton} handleDialogClose={handleDialogClose} />
+      <ReservationDialog dialogIsOpen={!!selectedDesk} onClose={onClose} selectedDate={props.selectedDate} deskId={selectedDesk} />
     </>
   )
 }
