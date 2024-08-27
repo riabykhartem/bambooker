@@ -31,16 +31,18 @@ type DeskCardProps = Desk & {
 export const DeskCard = (props: DeskCardProps) => {
   return (
     <CardStyled>
-      <HeaderBox>
-        <DeskNameTypography variant="h6">{props.name}</DeskNameTypography>
-        {props.isAvailable && <Button variant='contained' onClick={() => props.OnReserve(props.id)}>reserve</Button>}
-      </HeaderBox>
-      {props.isAvailable ?? <AvailabilityChip />}
-      <FeaturesBox>
-        {props.features.map(feature => (
-          <FeatureChip key={feature} feature={feature} />
-        ))}
-      </FeaturesBox>
+      <>
+        <HeaderBox>
+          <DeskNameTypography variant="h6">{props.name}</DeskNameTypography>
+          {props.isAvailable && <Button variant='contained' onClick={() => props.OnReserve(props.id)}>reserve</Button>}
+        </HeaderBox>
+        {props.isAvailable ?? <AvailabilityChip />}
+        <FeaturesBox>
+          {props.features.map(feature => (
+            <FeatureChip key={feature} feature={feature} />
+          ))}
+        </FeaturesBox>
+      </>
     </CardStyled>
   )
 }

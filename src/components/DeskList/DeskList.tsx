@@ -1,11 +1,16 @@
-import { useEffect, useState } from 'react';
+/* eslint-disable react/react-in-jsx-scope */
+import { useEffect, useRef, useState, } from 'react';
 import { getDesks } from '../../api/api';
 import { Desk } from '../../api/desk.model';
 import { MainLayout } from '../../layouts/MainLayout.tsx';
 import { DeskCard } from '../DeskCard/DeskCard.tsx';
-import { List, ListItem } from '@mui/material';
+import { Button, List, ListItem } from '@mui/material';
 import { Dayjs } from 'dayjs';
 import { ReservationDialog } from '../ReservationDialog/ReservationDialog.tsx'
+import Snackbar from '@mui/material/Snackbar';
+import Slide, { SlideProps } from '@mui/material/Slide';
+import { TransitionProps } from '@mui/material/transitions';
+import Reservation from '../../api/reservations.model.ts';
 
 
 export interface DeskListProps {
@@ -15,9 +20,22 @@ export interface DeskListProps {
 }
 
 export const DeskList = (props: DeskListProps) => {
-  // console.log('DeskList is rendering...');
+  const [snackbarState, setSnackbarState] = useState<{
+    open: boolean;
+    message: string;
+    Transition: React.ComponentType<
+      TransitionProps & {
+        children: React.ReactElement<any, any>;
+      }
+    >;
+  }>({
+    open: false,
+    message: '',
+    Transition: Slide,
+  });
   const [desks, setDesks] = useState<Desk[]>([]);
   const [selectedDesk, setSelectedDesk] = useState<string | null>(null)
+  const elementRef = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
     console.log("desklist rerendered");
@@ -33,11 +51,34 @@ export const DeskList = (props: DeskListProps) => {
 
   const onClose = () => {
     setSelectedDesk(null)
+    elementRef.current?.focus()
   }
+
+  const handleSnackbar = (result: Error | Reservation) => {
+    if (result instanceof Error) {
+      setSnackbarState({
+        open: true,
+        message: "OOps... reservation has failed",
+        Transition: Slide,
+      });
+    } else {
+      setSnackbarState({
+        open: true,
+        message: `${selectedDesk} has been reserved`,
+        Transition: Slide,
+      });
+    }
+  }
+
+  const handleSnackbarClose = () => {
+    setSnackbarState({ ...snackbarState, open: false })
+  }
+
 
   return (
     <>
       <MainLayout>
+        <Button ref={elementRef}>example</Button>
         <List sx={{
           width: '360px'
         }}>
@@ -47,8 +88,18 @@ export const DeskList = (props: DeskListProps) => {
             </ListItem>
           ))}
         </List>
+
+        <Snackbar
+          open={snackbarState.open}
+          onClose={handleSnackbarClose}
+          TransitionComponent={snackbarState.Transition}
+          message={snackbarState.message}
+          key={snackbarState.Transition.name}
+          autoHideDuration={1000}
+        />
       </MainLayout>
-      <ReservationDialog dialogIsOpen={!!selectedDesk} onClose={onClose} selectedDate={props.selectedDate} deskId={selectedDesk} />
+      {props.selectedDate && selectedDesk && <ReservationDialog dialogIsOpen={!!selectedDesk} onClose={onClose} selectedDate={props.selectedDate} deskId={selectedDesk} handleSnackbar={handleSnackbar} />}
+
     </>
   )
 }

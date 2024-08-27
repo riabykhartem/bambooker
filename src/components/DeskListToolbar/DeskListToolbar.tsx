@@ -27,8 +27,9 @@ export const DeskListToolbar = (props: DeskListToolbarProps) => {
   // console.log("DeskListToolbar is rendering");
   const [searchValue, setSearchValue] = useState('')
   const [locations, setLocations] = useState<Location[]>([]);
+  const loadingValue = ''
 
-  const debouncedSearch = useDebounce(searchValue)
+  const debouncedSearch = useDebounce(searchValue);
 
   const navigate = useNavigate();
 
@@ -54,7 +55,7 @@ export const DeskListToolbar = (props: DeskListToolbarProps) => {
 
   return (
     <ToolbarStyled>
-      <Select sx={{ width: '300px' }} size="small" value={props.locationId} onChange={handleLocationChange}>
+      <Select sx={{ width: '300px' }} size="small" value={locations.length > 0 ? props.locationId : loadingValue} onChange={handleLocationChange}>
         {locations.map(location => (
           <MenuItem key={location.id} value={location.id}>{location.displayName}</MenuItem>
         ))}

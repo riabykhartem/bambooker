@@ -60,11 +60,12 @@ export const addReservation = (props: {
     deskId: props.deskId,
     date: props.date
   }
-  return new Promise<Reservation>((resolve) => {
+  return new Promise<Reservation>((resolve, reject) => {
     setTimeout(() => {
-      reservations.push(newReservation)
-      resolve(newReservation);
-    }, 100);
+      // reservations.push(newReservation)
+      // resolve(newReservation);
+      reject(new Error('fail'))
+    }, 1500);
   });
 
 }
