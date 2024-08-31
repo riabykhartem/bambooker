@@ -1,4 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
 import { useEffect, useRef, useState, } from 'react';
 import { getDesks } from '../../api/api';
 import { Desk } from '../../api/desk.model';
@@ -8,8 +7,7 @@ import { Button, List, ListItem } from '@mui/material';
 import { Dayjs } from 'dayjs';
 import { ReservationDialog } from '../ReservationDialog/ReservationDialog.tsx'
 import Snackbar from '@mui/material/Snackbar';
-import Slide, { SlideProps } from '@mui/material/Slide';
-import { TransitionProps } from '@mui/material/transitions';
+import Slide from '@mui/material/Slide';
 import Reservation from '../../api/reservations.model.ts';
 
 
@@ -20,15 +18,7 @@ export interface DeskListProps {
 }
 
 export const DeskList = (props: DeskListProps) => {
-  const [snackbarState, setSnackbarState] = useState<{
-    open: boolean;
-    message: string;
-    Transition: React.ComponentType<
-      TransitionProps & {
-        children: React.ReactElement<any, any>;
-      }
-    >;
-  }>({
+  const [snackbarState, setSnackbarState] = useState({
     open: false,
     message: '',
     Transition: Slide,

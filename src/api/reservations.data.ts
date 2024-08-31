@@ -1,4 +1,4 @@
-import dayjs, { Dayjs } from 'dayjs';
+import dayjs from 'dayjs';
 import Reservation from './reservations.model'
 
 export const reservations: Reservation[] = [

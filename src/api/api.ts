@@ -54,17 +54,21 @@ export const getLocations = () => {
 export const addReservation = (props: {
   deskId: string;
   date: Dayjs
-}) =>{
+}) => {
   const newReservation: Reservation = {
     id: reservations.length.toString(),
     deskId: props.deskId,
     date: props.date
-  }
+  };
+
   return new Promise<Reservation>((resolve, reject) => {
     setTimeout(() => {
-      // reservations.push(newReservation)
-      // resolve(newReservation);
-      reject(new Error('fail'))
+      if(Math.random() > 0.2) {
+        reservations.push(newReservation);
+        resolve(newReservation);
+      } else {
+        reject(new Error('fail'));
+      }
     }, 1500);
   });
 
