@@ -1,4 +1,4 @@
-import { Desk, DeskFeature } from './desk.model.ts';
+import { Desk, DeskFeature } from '../models/desk.model.ts';
 
 export const generateDesks = (count: number, locationId: string, namePrefix: string) => {
   const desks: Desk[] = [];

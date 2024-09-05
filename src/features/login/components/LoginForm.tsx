@@ -1,9 +1,6 @@
 import { useRef, FormEvent } from 'react';
-import { login } from '../../api/api.ts';
-import { useMutation } from '@tanstack/react-query';
-import { useNavigate } from 'react-router-dom';
 import { Button, Card, FormControl, Input, InputLabel, styled } from '@mui/material';
-
+import { useLoginMutation } from '../hooks/useLoginMutation';
 const CardStyled = styled(Card)`
     position: fixed;
     left: 50%;
@@ -23,23 +20,9 @@ const FormStyled = styled('form')`
 `;
 
 export const LoginForm = () => {
+  const loginMutation = useLoginMutation()
   const usernameRef = useRef<HTMLInputElement>(null);
   const passwordRef = useRef<HTMLInputElement>(null);
-
-  const navigate = useNavigate();
-
-  const loginMutation = useMutation({
-    mutationFn: login,
-    mutationKey: ['login'],
-    onSuccess: () => {
-      navigate('/c80ae63/desks');
-    },
-    onError: error => {
-      console.error('login error', error); // <- stay
-    },
-  });
-
-  console.log('Login Form is rendering...');
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();

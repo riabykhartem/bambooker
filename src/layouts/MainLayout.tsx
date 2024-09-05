@@ -10,5 +10,5 @@ export const MainLayout = (props: PropsWithChildren) => {
     <BoxStyled>
       {props.children}
     </BoxStyled>
-  )
-}
+  );
+};

@@ -1,22 +1,21 @@
 /* eslint-disable react/react-in-jsx-scope */
-import { useEffect, useRef, useState, } from 'react';
-import { getDesks } from '../../api/api';
-import { Desk } from '../../api/desk.model';
-import { MainLayout } from '../../layouts/MainLayout.tsx';
-import { DeskCard } from '../DeskCard/DeskCard.tsx';
+import { useEffect, useRef, useState } from 'react';
+import { getDesks } from '../api/desksApi.tsx';
+import { Desk } from '../../../models/desk.model.ts';
+import { MainLayout } from '../../../layouts/MainLayout.tsx';
+import { DeskCard } from './DeskCard.tsx';
 import { Button, List, ListItem } from '@mui/material';
 import { Dayjs } from 'dayjs';
-import { ReservationDialog } from '../ReservationDialog/ReservationDialog.tsx'
+import { ReservationDialog } from './ReservationDialog.tsx';
 import Snackbar from '@mui/material/Snackbar';
-import Slide, { SlideProps } from '@mui/material/Slide';
+import Slide from '@mui/material/Slide';
 import { TransitionProps } from '@mui/material/transitions';
-import Reservation from '../../api/reservations.model.ts';
-
+import Reservation from '../../../models/reservations.model.ts';
 
 export interface DeskListProps {
-  locationId: string,
-  searchValue: string,
-  selectedDate: Dayjs | null
+  locationId: string;
+  searchValue: string;
+  selectedDate: Dayjs | null;
 }
 
 export const DeskList = (props: DeskListProps) => {
@@ -34,31 +33,34 @@ export const DeskList = (props: DeskListProps) => {
     Transition: Slide,
   });
   const [desks, setDesks] = useState<Desk[]>([]);
-  const [selectedDesk, setSelectedDesk] = useState<string | null>(null)
-  const elementRef = useRef<HTMLButtonElement>(null)
+  const [selectedDesk, setSelectedDesk] = useState<string | null>(null);
+  const elementRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
-    console.log("desklist rerendered");
-    getDesks({ locationId: props.locationId, searchTerm: props.searchValue, selectedDate: props.selectedDate ?? undefined })
-      .then(desklist => {
-        setDesks(desklist)
-      })
+    console.log('desklist rerendered');
+    getDesks({
+      locationId: props.locationId,
+      searchTerm: props.searchValue,
+      selectedDate: props.selectedDate ?? undefined,
+    }).then((desklist) => {
+      setDesks(desklist);
+    });
   }, [props.locationId, props.searchValue, props.selectedDate]);
 
   const OnReserve = (deskId: string) => {
-    setSelectedDesk(deskId)
-  }
+    setSelectedDesk(deskId);
+  };
 
   const onClose = () => {
-    setSelectedDesk(null)
-    elementRef.current?.focus()
-  }
+    setSelectedDesk(null);
+    elementRef.current?.focus();
+  };
 
   const handleSnackbar = (result: Error | Reservation) => {
     if (result instanceof Error) {
       setSnackbarState({
         open: true,
-        message: "OOps... reservation has failed",
+        message: 'OOps... reservation has failed',
         Transition: Slide,
       });
     } else {
@@ -68,20 +70,21 @@ export const DeskList = (props: DeskListProps) => {
         Transition: Slide,
       });
     }
-  }
+  };
 
   const handleSnackbarClose = () => {
-    setSnackbarState({ ...snackbarState, open: false })
-  }
-
+    setSnackbarState({ ...snackbarState, open: false });
+  };
 
   return (
     <>
       <MainLayout>
         <Button ref={elementRef}>example</Button>
-        <List sx={{
-          width: '360px'
-        }}>
+        <List
+          sx={{
+            width: '360px',
+          }}
+        >
           {desks.map((desk) => (
             <ListItem key={desk.id}>
               <DeskCard {...desk} OnReserve={OnReserve} />
@@ -98,8 +101,15 @@ export const DeskList = (props: DeskListProps) => {
           autoHideDuration={1000}
         />
       </MainLayout>
-      {props.selectedDate && selectedDesk && <ReservationDialog dialogIsOpen={!!selectedDesk} onClose={onClose} selectedDate={props.selectedDate} deskId={selectedDesk} handleSnackbar={handleSnackbar} />}
-
+      {props.selectedDate && selectedDesk && (
+        <ReservationDialog
+          dialogIsOpen={!!selectedDesk}
+          onClose={onClose}
+          selectedDate={props.selectedDate}
+          deskId={selectedDesk}
+          handleSnackbar={handleSnackbar}
+        />
+      )}
     </>
-  )
-}
+  );
+};

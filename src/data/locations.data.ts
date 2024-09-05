@@ -1,4 +1,4 @@
-import { Location } from './location.model';
+import { Location } from '../models/location.model';
 
 export const locations: Location[] = [
   {
@@ -9,4 +9,4 @@ export const locations: Location[] = [
     id: '25d8c0f',
     displayName: 'New Office in Downtown',
   },
-]
+];

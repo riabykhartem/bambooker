@@ -1,5 +1,5 @@
 import { Chip, Tooltip } from '@mui/material';
-import { DeskFeature } from '../../api/desk.model.ts';
+import { DeskFeature } from '../../../models/desk.model.ts';
 
 const featureMap: Record<DeskFeature, { label: string, description?: string }> = {
   [DeskFeature.TwoMonitors]: {

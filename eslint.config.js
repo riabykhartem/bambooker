@@ -1,29 +1,25 @@
 import globals from "globals";
-import pluginJs from "@eslint/js";
 import tseslint from "typescript-eslint";
 import pluginReact from "eslint-plugin-react";
+import stylistic from "@stylistic/eslint-plugin";
 
 export default [
   {
     files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"],
+  },
+  ...tseslint.configs.recommended,
+  pluginReact.configs.flat.recommended,
+  {
     languageOptions: {
       globals: globals.browser,
     },
     plugins: {
-      "@typescript-eslint": tseslint,
-      react: pluginReact,
+      "@stylistic": stylistic,
     },
     rules: {
-      semi: ["error", "always"], // Require semicolons
-      // Other custom rules can go here
-    },
-    settings: {
-      react: {
-        version: "detect",
-      },
+      "react/react-in-jsx-scope": "off",
+      "@stylistic/indent": ["warn", 2],
+      "@stylistic/semi": "warn",
     },
   },
-  pluginJs.configs.recommended,
-  ...tseslint.configs.recommended,
-  pluginReact.configs.flat.recommended,
 ];

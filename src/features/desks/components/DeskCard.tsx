@@ -1,7 +1,7 @@
-import { Desk } from '../../api/desk.model.ts';
+import { Desk } from '../../../models/desk.model.ts';
 import { Box, Button, Card, styled, Typography } from '@mui/material';
-import { FeatureChip } from '../FeatureChip/FeatureChip.tsx';
-import { AvailabilityChip } from '../AvailabilityChip/AvailabilityChip.tsx';
+import { FeatureChip } from '../../../features/desks/components/FeatureChip.tsx';
+import { AvailabilityChip } from './AvailabilityChip.tsx';
 
 const CardStyled = styled(Card)`
     width: 20rem;

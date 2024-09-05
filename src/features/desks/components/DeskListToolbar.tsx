@@ -1,8 +1,9 @@
-import { ChangeEvent, useEffect, useState } from "react"
-import { getLocations } from "../../api/api"
-import { Location } from '../../api/location.model.ts';
+/* eslint-disable react/react-in-jsx-scope */
+import { ChangeEvent, useEffect, useState } from "react";
+import { getLocations } from "../api/locationsApi.tsx";
+import { Location } from '../../../models/location.model.ts';
 import { useNavigate } from 'react-router-dom';
-import { useDebounce } from "../../assets/hooks/useDebounce.tsx";
+import { useDebounce } from "../hooks/useDebounce.tsx";
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import TextField from '@mui/material/TextField';
@@ -25,33 +26,31 @@ export interface DeskListToolbarProps {
 
 export const DeskListToolbar = (props: DeskListToolbarProps) => {
   // console.log("DeskListToolbar is rendering");
-  const [searchValue, setSearchValue] = useState('')
+  const [searchValue, setSearchValue] = useState('');
   const [locations, setLocations] = useState<Location[]>([]);
-  const loadingValue = ''
+  const loadingValue = '';
 
   const debouncedSearch = useDebounce(searchValue);
 
   const navigate = useNavigate();
 
   useEffect(() => {
-    props.handleSearch(debouncedSearch)
+    props.handleSearch(debouncedSearch);
     getLocations()
       .then(locations => {
         setLocations(locations);
       });
 
-  }, [debouncedSearch])
+  }, [debouncedSearch]);
 
   const handleLocationChange = (e: SelectChangeEvent) => {
     navigate(`/${e.target.value}/desks`);
-  }
+  };
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     const q = e?.target?.value ?? '';
     setSearchValue(q);
-  }
-
-
+  };
 
   return (
     <ToolbarStyled>
