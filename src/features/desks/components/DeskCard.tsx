@@ -26,7 +26,7 @@ const HeaderBox = styled(Box)`
 
 type DeskCardProps = Desk & {
   OnReserve: (deskId: string) => void
-}
+};
 
 export const DeskCard = (props: DeskCardProps) => {
   return (
@@ -44,5 +44,5 @@ export const DeskCard = (props: DeskCardProps) => {
         </FeaturesBox>
       </>
     </CardStyled>
-  )
-}
+  );
+};

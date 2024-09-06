@@ -68,5 +68,5 @@ export const DeskListToolbar = (props: DeskListToolbarProps) => {
       />
       <TextField size="small" onChange={handleInputChange} placeholder="Search for desk" />
     </ToolbarStyled>
-  )
-}
+  );
+};

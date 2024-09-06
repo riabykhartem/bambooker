@@ -1,6 +1,6 @@
 import { DeskList } from '../features/desks/components/DeskList.tsx';
 import { useParams } from 'react-router-dom';
-import { DeskListToolbar } from '../features/desks/components/DeskListToolbar.tsx'
+import { DeskListToolbar } from '../features/desks/components/DeskListToolbar.tsx';
 import { useState } from 'react';
 import { AppBar, Toolbar } from "@mui/material";
 import dayjs, { Dayjs } from 'dayjs';

@@ -2,7 +2,7 @@ import { Button, Dialog, DialogContent, DialogContentText, DialogTitle, styled }
 import { addReservation } from '../api/reservationsApi';
 import { Dayjs } from 'dayjs';
 import { useMutation } from '@tanstack/react-query';
-import Reservation from '../../../models/reservations.model';
+import { enqueueSnackbar } from 'notistack';
 
 
 export interface ReservationDialogProps {
@@ -10,7 +10,6 @@ export interface ReservationDialogProps {
   selectedDate: Dayjs;
   dialogIsOpen: boolean;
   onClose: () => void;
-  handleSnackbar: (result: Error | Reservation) => void;
 }
 
 const DialogStyled = styled(Dialog)(({ theme }) => ({
@@ -21,7 +20,8 @@ const DialogStyled = styled(Dialog)(({ theme }) => ({
     padding: theme.spacing(2), // Custom padding
     borderRadius: "20px", // Custom border radius
   },
-}))
+}));
+
 export function ReservationDialog(props: ReservationDialogProps) {
 
   const reserveMutation = useMutation({
@@ -29,13 +29,18 @@ export function ReservationDialog(props: ReservationDialogProps) {
     mutationKey: ['reservation'],
     onSuccess: () => {
       console.log('resevation added');
+      enqueueSnackbar(`selected desk will be waiting for you on ${props.selectedDate.format("MM-DD-YYYY")}`, {
+        variant: 'success',
+        autoHideDuration: 3000
+      });
     },
 
-    onError: error => {
-      props.handleSnackbar(error);
+    onError: () => {
+      enqueueSnackbar("OOps... reservation has failed", {
+        variant: 'error',
+        autoHideDuration: 5000
+      });
     },
-
-
   });
 
   const handleConfirmButton = async () => {

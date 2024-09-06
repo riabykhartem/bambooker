@@ -20,7 +20,7 @@ const FormStyled = styled('form')`
 `;
 
 export const LoginForm = () => {
-  const loginMutation = useLoginMutation()
+  const loginMutation = useLoginMutation();
   const usernameRef = useRef<HTMLInputElement>(null);
   const passwordRef = useRef<HTMLInputElement>(null);
 
@@ -33,7 +33,7 @@ export const LoginForm = () => {
     console.log('username and password', username, password);
 
     loginMutation.mutate({ username, password });
-  }
+  };
 
   return (
     <CardStyled>
@@ -50,4 +50,4 @@ export const LoginForm = () => {
       </FormStyled>
     </CardStyled>
   );
-}
+};

@@ -26,7 +26,7 @@ const featureMap: Record<DeskFeature, { label: string, description?: string }> =
     label: 'Whiteboard',
     description: 'Whiteboard nearby, perfect for design',
   },
-}
+};
 
 export interface FeatureChipProps {
   feature: DeskFeature
@@ -44,7 +44,7 @@ export const FeatureChip = (props: FeatureChipProps) => {
       <Tooltip title={description} arrow placement="top">
         {chip}
       </Tooltip>
-    )
+    );
 
   return chip;
-}
+};
