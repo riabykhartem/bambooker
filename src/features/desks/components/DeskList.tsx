@@ -2,7 +2,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { getDesks } from '../api/desksApi.tsx';
 import { Desk } from '../../../models/desk.model.ts';
-import { MainLayout } from '../../../layouts/MainLayout.tsx';
 import { DeskCard } from './DeskCard.tsx';
 import { Button, List, ListItem } from '@mui/material';
 import { Dayjs } from 'dayjs';
@@ -41,21 +40,19 @@ export const DeskList = (props: DeskListProps) => {
 
   return (
     <>
-      <MainLayout>
-        <Button ref={elementRef}>example</Button>
-        <List
-          sx={{
-            width: '360px',
-          }}
-        >
-          {desks.map((desk) => (
-            <ListItem key={desk.id}>
-              <DeskCard {...desk} OnReserve={OnReserve} />
-            </ListItem>
-          ))}
-        </List>
+      <Button ref={elementRef}>example</Button>
+      <List
+        sx={{
+          width: '360px',
+        }}
+      >
+        {desks.map((desk) => (
+          <ListItem key={desk.id}>
+            <DeskCard {...desk} OnReserve={OnReserve} />
+          </ListItem>
+        ))}
+      </List>
 
-      </MainLayout>
       {props.selectedDate && selectedDesk && (
         <ReservationDialog
           dialogIsOpen={!!selectedDesk}

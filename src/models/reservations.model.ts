@@ -1,8 +1,8 @@
-import { Dayjs } from 'dayjs'
+import { Dayjs } from 'dayjs';
 
 
 export default interface Reservation {
-    id: string,
-    deskId: string,
-    date: Dayjs
+  id: string,
+  deskId: string,
+  date: Dayjs
 }
