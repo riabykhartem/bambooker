@@ -8,7 +8,7 @@ import IconButton from '@mui/material/IconButton';
 
 interface AppBarProps extends MuiAppBarProps {
   open: boolean;
-  handleOpen: () => void;
+  handleOpen?: () => void;
 }
 
 const drawerWidth = 240;
@@ -38,17 +38,13 @@ const AppBarStyled = styled(MuiAppBar, {
 }));
 export function DrawerAppBar(props: AppBarProps) {
 
-  const handleDrawerOpen = () => {
-    props.handleOpen();
-  };
-
   return (
     <AppBarStyled position="fixed" open={props.open}>
       <Toolbar>
         <IconButton
           color="inherit"
           aria-label="open drawer"
-          onClick={handleDrawerOpen}
+          onClick={props.handleOpen}
           edge="start"
           sx={[
             {
