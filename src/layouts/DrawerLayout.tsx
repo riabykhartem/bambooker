@@ -16,7 +16,7 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import { Outlet } from 'react-router-dom';
 import ComputerIcon from '@mui/icons-material/Computer';
-import { DrawerAppBar } from '../features/drawer/AppBar';
+import { DrawerAppBar } from '../features/drawer/components/DrawerAppBar';
 
 const drawerWidth = 240;
 

@@ -16,6 +16,7 @@ export interface DeskListProps {
 export const DeskList = (props: DeskListProps) => {
   const [desks, setDesks] = useState<Desk[]>([]);
   const [selectedDesk, setSelectedDesk] = useState<string | null>(null);
+  const [selectedDeskName, setSelectedDeskName] = useState<string | null>(null);
   const elementRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
@@ -29,8 +30,9 @@ export const DeskList = (props: DeskListProps) => {
     });
   }, [props.locationId, props.searchValue, props.selectedDate]);
 
-  const OnReserve = (deskId: string) => {
+  const OnReserve = (deskId: string, deskName: string) => {
     setSelectedDesk(deskId);
+    setSelectedDeskName(deskName);
   };
 
   const onClose = () => {
@@ -48,17 +50,18 @@ export const DeskList = (props: DeskListProps) => {
       >
         {desks.map((desk) => (
           <ListItem key={desk.id}>
-            <DeskCard {...desk} OnReserve={OnReserve} />
+            <DeskCard {...desk} OnReserve={() => OnReserve(desk.id, desk.name)} />
           </ListItem>
         ))}
       </List>
 
-      {props.selectedDate && selectedDesk && (
+      {props.selectedDate && selectedDesk && selectedDeskName && (
         <ReservationDialog
           dialogIsOpen={!!selectedDesk}
           onClose={onClose}
           selectedDate={props.selectedDate}
           deskId={selectedDesk}
+          deskName={selectedDeskName}
         />
       )}
     </>

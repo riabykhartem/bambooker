@@ -7,6 +7,7 @@ import { enqueueSnackbar } from 'notistack';
 
 export interface ReservationDialogProps {
   deskId: string;
+  deskName: string;
   selectedDate: Dayjs;
   dialogIsOpen: boolean;
   onClose: () => void;
@@ -29,7 +30,7 @@ export function ReservationDialog(props: ReservationDialogProps) {
     mutationKey: ['reservation'],
     onSuccess: () => {
       console.log('resevation added');
-      enqueueSnackbar(`selected desk will be waiting for you on ${props.selectedDate.format("MM-DD-YYYY")}`, {
+      enqueueSnackbar(`Desk ${props.deskName} will be waiting for you on ${props.selectedDate.format("MM-DD-YYYY")}`, {
         variant: 'success',
         autoHideDuration: 3000
       });
@@ -45,7 +46,7 @@ export function ReservationDialog(props: ReservationDialogProps) {
 
   const handleConfirmButton = async () => {
     props.onClose();
-    reserveMutation.mutate({ deskId: props.deskId, date: props.selectedDate });
+    reserveMutation.mutate({ deskId: props.deskId, deskName: props.deskName, date: props.selectedDate });
   };
 
 
