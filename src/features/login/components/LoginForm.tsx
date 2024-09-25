@@ -4,11 +4,14 @@ import { useLoginMutation } from '../hooks/useLoginMutation';
 
 const FormStyled = styled('form')`
     width: 15rem;
-
     display: flex;
     flex-direction: column;
-
     gap: ${({ theme }) => theme.spacing(4)};
+
+`;
+
+const CardStyled = styled(Card)`
+    padding: ${({ theme }) => theme.spacing(4)}
 `;
 
 export const LoginForm = () => {
@@ -28,7 +31,7 @@ export const LoginForm = () => {
   };
 
   return (
-    <Card>
+    <CardStyled>
       <FormStyled onSubmit={handleSubmit}>
         <FormControl variant="standard">
           <InputLabel htmlFor="username-input">Username</InputLabel>
@@ -40,6 +43,6 @@ export const LoginForm = () => {
         </FormControl>
         <Button type="submit" variant="contained" color="primary" disabled={loginMutation.isPending}>Login</Button>
       </FormStyled>
-    </Card>
+    </CardStyled>
   );
 };
