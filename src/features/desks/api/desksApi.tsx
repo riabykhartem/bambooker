@@ -1,5 +1,5 @@
 import { Desk, DeskFeature } from '../../../models/desk.model';
-import desks from '../../../data/desks.data.json'
+import desks from '../../../data/desks.data.json';
 import { reservations } from '../../../data/reservations.data';
 import dayjs, { Dayjs } from 'dayjs';
 

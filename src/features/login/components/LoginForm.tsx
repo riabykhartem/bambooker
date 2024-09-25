@@ -1,22 +1,17 @@
 import { useRef, FormEvent } from 'react';
 import { Button, Card, FormControl, Input, InputLabel, styled } from '@mui/material';
 import { useLoginMutation } from '../hooks/useLoginMutation';
-const CardStyled = styled(Card)`
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-    padding: ${({ theme }) => theme.spacing(4)};
-`;
 
 const FormStyled = styled('form')`
     width: 15rem;
-
     display: flex;
     flex-direction: column;
-
     gap: ${({ theme }) => theme.spacing(4)};
+
+`;
+
+const CardStyled = styled(Card)`
+    padding: ${({ theme }) => theme.spacing(4)}
 `;
 
 export const LoginForm = () => {
@@ -38,11 +33,11 @@ export const LoginForm = () => {
   return (
     <CardStyled>
       <FormStyled onSubmit={handleSubmit}>
-        <FormControl>
+        <FormControl variant="standard">
           <InputLabel htmlFor="username-input">Username</InputLabel>
           <Input id="username-input" inputRef={usernameRef} />
         </FormControl>
-        <FormControl>
+        <FormControl variant="standard">
           <InputLabel htmlFor="password-input">Password</InputLabel>
           <Input id="password-input" inputRef={passwordRef} />
         </FormControl>

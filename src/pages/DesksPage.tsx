@@ -2,7 +2,6 @@ import { DeskList } from '../features/desks/components/DeskList.tsx';
 import { useParams } from 'react-router-dom';
 import { DeskListToolbar } from '../features/desks/components/DeskListToolbar.tsx';
 import { useState } from 'react';
-import { AppBar, Toolbar } from "@mui/material";
 import dayjs, { Dayjs } from 'dayjs';
 
 
@@ -18,10 +17,7 @@ export const DesksPage = () => {
   };
   return (
     <>
-      <AppBar position="fixed" color="inherit">
-        <DeskListToolbar locationId={locationId} handleSearch={handleSearch} selectedDate={selectedDate} setSelectedDate={setSelectedDate} />
-      </AppBar>
-      <Toolbar />
+      <DeskListToolbar locationId={locationId} handleSearch={handleSearch} selectedDate={selectedDate} setSelectedDate={setSelectedDate} />
       <DeskList key={locationId} locationId={locationId} searchValue={searchValue} selectedDate={selectedDate} />
     </>
   );

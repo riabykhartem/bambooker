@@ -12,7 +12,7 @@ export const generateDesks = (count: number, locationId: string, namePrefix: str
   }
 
   return desks;
-}
+};
 
 export const generateDesks2 = (count: number, locationId: string, namePrefix: string) => {
   const desks: Desk[] = [];
@@ -27,7 +27,7 @@ export const generateDesks2 = (count: number, locationId: string, namePrefix: st
   }
 
   return desks;
-}
+};
 
 
 
@@ -39,7 +39,7 @@ const allFeatures = [
   DeskFeature.Quiet,
   DeskFeature.Shared,
   DeskFeature.Whiteboard,
-]
+];
 
 const generateFeaturesList = () => {
   const features = [];
@@ -47,4 +47,4 @@ const generateFeaturesList = () => {
     if (Math.random() < 0.5) features.push(allFeatures[i]);
   }
   return features;
-}
+};
