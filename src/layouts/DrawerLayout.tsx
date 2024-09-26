@@ -12,10 +12,9 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import DesktopMacIcon from '@mui/icons-material/DesktopMac';
+import BookIcon from '@mui/icons-material/Book';
 import { Outlet } from 'react-router-dom';
-import ComputerIcon from '@mui/icons-material/Computer';
 import { DrawerAppBar } from '../features/drawer/components/DrawerAppBar';
 
 const drawerWidth = 240;
@@ -96,107 +95,96 @@ export default function DrawerLayout() {
         </DrawerHeader>
         <Divider />
         <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-            <ListItem key={text} disablePadding sx={{ display: 'block' }}>
-              <ListItemButton
-                sx={[
-                  {
-                    minHeight: 48,
-                    px: 2.5,
+          {/* deskspage button */}
+          <ListItem key="desks" disablePadding sx={{ display: 'block' }}>
+            <ListItemButton
+              sx={[
+                {
+                  minHeight: 48,
+                  px: 2.5,
+                },
+                open
+                  ? {
+                    justifyContent: 'initial',
+                  }
+                  : {
+                    justifyContent: 'center',
                   },
+              ]}>
+              <ListItemIcon sx={[
+                {
+                  minWidth: 0,
+                  justifyContent: 'center',
+                },
+                open
+                  ? {
+                    mr: 3,
+                  }
+                  : {
+                    mr: 'auto',
+                  },
+              ]}>
+                <DesktopMacIcon />
+              </ListItemIcon>
+              <ListItemText
+                primary={"desks"}
+                sx={[
                   open
                     ? {
-                      justifyContent: 'initial',
+                      opacity: 1,
                     }
                     : {
-                      justifyContent: 'center',
+                      opacity: 0,
                     },
                 ]}
-              >
-                <ListItemIcon
-                  sx={[
-                    {
-                      minWidth: 0,
-                      justifyContent: 'center',
-                    },
-                    open
-                      ? {
-                        mr: 3,
-                      }
-                      : {
-                        mr: 'auto',
-                      },
-                  ]}
-                >
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText
-                  primary={text}
-                  sx={[
-                    open
-                      ? {
-                        opacity: 1,
-                      }
-                      : {
-                        opacity: 0,
-                      },
-                  ]}
-                />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List>
-        <Divider />
-        <List>
-          {['All mail', 'Trash', 'Spam'].map((text) => (
-            <ListItem key={text} disablePadding sx={{ display: 'block' }}>
-              <ListItemButton
-                sx={[
-                  {
-                    minHeight: 48,
-                    px: 2.5,
+              />
+            </ListItemButton>
+          </ListItem>
+          {/* reservations button */}
+          <ListItem key="reservations" disablePadding sx={{ display: 'block' }}>
+            <ListItemButton
+              sx={[
+                {
+                  minHeight: 48,
+                  px: 2.5,
+                },
+                open
+                  ? {
+                    justifyContent: 'initial',
+                  }
+                  : {
+                    justifyContent: 'center',
                   },
+              ]}>
+              <ListItemIcon sx={[
+                {
+                  minWidth: 0,
+                  justifyContent: 'center',
+                },
+                open
+                  ? {
+                    mr: 3,
+                  }
+                  : {
+                    mr: 'auto',
+                  },
+              ]}>
+                <BookIcon />
+              </ListItemIcon>
+              <ListItemText
+                primary={"reservations"}
+                sx={[
                   open
                     ? {
-                      justifyContent: 'initial',
+                      opacity: 1,
                     }
                     : {
-                      justifyContent: 'center',
+                      opacity: 0,
                     },
                 ]}
-              >
-                <ListItemIcon
-                  sx={[
-                    {
-                      minWidth: 0,
-                      justifyContent: 'center',
-                    },
-                    open
-                      ? {
-                        mr: 3,
-                      }
-                      : {
-                        mr: 'auto',
-                      },
-                  ]}
-                >
-                  {<ComputerIcon />}
-                </ListItemIcon>
-                <ListItemText
-                  primary={text}
-                  sx={[
-                    open
-                      ? {
-                        opacity: 1,
-                      }
-                      : {
-                        opacity: 0,
-                      },
-                  ]}
-                />
-              </ListItemButton>
-            </ListItem>
-          ))}
+              />
+            </ListItemButton>
+          </ListItem>
         </List>
       </Drawer>
       <Box component="main" sx={{ flexGrow: 1 }}>
