@@ -14,7 +14,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import DesktopMacIcon from '@mui/icons-material/DesktopMac';
 import BookIcon from '@mui/icons-material/Book';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 import { DrawerAppBar } from '../features/drawer/components/DrawerAppBar';
 
 const drawerWidth = 240;
@@ -78,10 +78,21 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 export default function DrawerLayout() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
+  const navigate = useNavigate();
+
 
   const handleDrawerClose = () => {
     setOpen(false);
   };
+
+  const onDesksIcon = () => {
+    navigate('/c80ae63/desks');
+  };
+
+  const onReservationsIcon = () => {
+    navigate('/reservations');
+  };
+
 
   return (
     <Box sx={{ display: 'flex' }}>
@@ -97,7 +108,7 @@ export default function DrawerLayout() {
         <List>
           {/* deskspage button */}
           <ListItem key="desks" disablePadding sx={{ display: 'block' }}>
-            <ListItemButton
+            <ListItemButton onClick={onDesksIcon}
               sx={[
                 {
                   minHeight: 48,
@@ -143,6 +154,7 @@ export default function DrawerLayout() {
           {/* reservations button */}
           <ListItem key="reservations" disablePadding sx={{ display: 'block' }}>
             <ListItemButton
+              onClick={onReservationsIcon}
               sx={[
                 {
                   minHeight: 48,
