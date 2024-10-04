@@ -3,11 +3,13 @@ import { addReservation } from '../api/reservationsApi';
 import { Dayjs } from 'dayjs';
 import { useMutation } from '@tanstack/react-query';
 import { enqueueSnackbar } from 'notistack';
+import { DeskFeature } from '../../../models/desk.model';
 
 
 export interface ReservationDialogProps {
   deskId: string;
   deskName: string;
+  deskFeatures: DeskFeature[];
   selectedDate: Dayjs;
   dialogIsOpen: boolean;
   onClose: () => void;
@@ -46,7 +48,7 @@ export function ReservationDialog(props: ReservationDialogProps) {
 
   const handleConfirmButton = async () => {
     props.onClose();
-    reserveMutation.mutate({ deskId: props.deskId, deskName: props.deskName, date: props.selectedDate });
+    reserveMutation.mutate({ deskId: props.deskId, deskName: props.deskName, deskFeatures: props.deskFeatures, date: props.selectedDate });
   };
 
 
