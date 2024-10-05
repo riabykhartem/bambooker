@@ -1,10 +1,7 @@
-import { ReservationCard } from "../features/desks/components/ReservationCard";
-
+import { ReservationList } from "../features/desks/components/ReservationList"
 export const ReservationsPage = () => {
-
-  return (
-    <ReservationCard id="1" deskId="1" deskName="ssss" deskFeatures={[1, 2]}>
-
-    </ReservationCard >
+  return (<>
+    <ReservationList />
+  </>
   );
 };

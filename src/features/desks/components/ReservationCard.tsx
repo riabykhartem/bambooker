@@ -1,4 +1,4 @@
-import { styled } from "@mui/material"
+import { styled } from "@mui/material";
 import Reservation from "../../../models/reservations.model";
 import Card from "@mui/material/Card";
 import Box from "@mui/material/Box";

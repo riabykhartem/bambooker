@@ -12,7 +12,7 @@ export const addReservation = (props: { deskId: string; deskName: string; deskFe
     deskFeatures: props.deskFeatures,
     date: props.date
   };
-  return new Promise<Reservation>((resolve, reject) => {
+  return new Promise<Reservation>((resolve) => {
     setTimeout(() => {
       reservations.push(newReservation);
       resolve(newReservation);
@@ -34,5 +34,13 @@ export const deleteReservation = (id: string) => {
         reject(new Error("reservation not found"));
       }
     }, 2000);
+  });
+};
+
+export const getReservations = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(reservations);
+    }, 500);
   });
 };
