@@ -1,7 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 import { useEffect, useRef, useState } from 'react';
 import { getDesks } from '../api/desksApi.tsx';
-import { Desk } from '../../../models/desk.model.ts';
+import { Desk, DeskFeature } from '../../../models/desk.model.ts';
 import { DeskCard } from './DeskCard.tsx';
 import { Button, List, ListItem } from '@mui/material';
 import { Dayjs } from 'dayjs';
@@ -17,6 +17,7 @@ export const DeskList = (props: DeskListProps) => {
   const [desks, setDesks] = useState<Desk[]>([]);
   const [selectedDesk, setSelectedDesk] = useState<string | null>(null);
   const [selectedDeskName, setSelectedDeskName] = useState<string | null>(null);
+  const [selectedDeskFeatures, setSelectedDeskFeatures] = useState<DeskFeature[] | null>(null);
   const elementRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
@@ -30,9 +31,10 @@ export const DeskList = (props: DeskListProps) => {
     });
   }, [props.locationId, props.searchValue, props.selectedDate]);
 
-  const OnReserve = (deskId: string, deskName: string) => {
+  const OnReserve = (deskId: string, deskName: string, deskFeatures: DeskFeature[]) => {
     setSelectedDesk(deskId);
     setSelectedDeskName(deskName);
+    setSelectedDeskFeatures(deskFeatures);
   };
 
   const onClose = () => {
@@ -50,18 +52,19 @@ export const DeskList = (props: DeskListProps) => {
       >
         {desks.map((desk) => (
           <ListItem key={desk.id}>
-            <DeskCard {...desk} OnReserve={() => OnReserve(desk.id, desk.name)} />
+            <DeskCard {...desk} OnReserve={() => OnReserve(desk.id, desk.name, desk.features)} />
           </ListItem>
         ))}
       </List>
 
-      {props.selectedDate && selectedDesk && selectedDeskName && (
+      {props.selectedDate && selectedDesk && selectedDeskName && selectedDeskFeatures && (
         <ReservationDialog
           dialogIsOpen={!!selectedDesk}
           onClose={onClose}
           selectedDate={props.selectedDate}
           deskId={selectedDesk}
           deskName={selectedDeskName}
+          deskFeatures={selectedDeskFeatures}
         />
       )}
     </>

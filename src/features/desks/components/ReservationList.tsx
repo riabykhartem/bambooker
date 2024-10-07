@@ -4,33 +4,29 @@ import { ReservationCard } from "./ReservationCard";
 import Reservation from "../../../models/reservations.model";
 import { List, ListItem } from "@mui/material";
 
-
-
 export const ReservationList = () => {
-  const [reservations, setReservations] = useState<Reservation[]>([]);
+  const [activeReservations, setActiveReservations] = useState<Reservation[]>([]);
 
   useEffect(() => {
     getReservations()
-      .then((reservations) => {
-        setReservations(reservations);
-      });
+      .then((res) => {
+        setActiveReservations(res);
+      }).then(() => console.log(activeReservations));
 
   }, []);
 
-  return (
+  return (<>
     <List>
       {
-        reservations.map((r) => {
-          <ListItem>
-            <ReservationCard id={r.id} deskId={r.deskId} deskName={r.deskId} deskFeatures={r.deskFeatures} />
-          </ListItem>;
-        })
+        activeReservations.map((r, index) => (
+          <ListItem key={index}>
+            <ReservationCard {...r} />
+          </ListItem>
+        ))
       }
-
     </List>
-
-
-  )
-}
+  </>
+  );
+};
 
 
