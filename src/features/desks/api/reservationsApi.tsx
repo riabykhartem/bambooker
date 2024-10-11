@@ -40,6 +40,7 @@ export const deleteReservation = (id: string) => {
 export const getReservations = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
+      console.log('reservations requested');
       resolve(reservations);
     }, 500);
   });

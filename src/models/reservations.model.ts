@@ -5,6 +5,6 @@ export default interface Reservation {
   id: string;
   deskId: string;
   deskName: string;
-  date?: Dayjs;
+  date: Dayjs;
   deskFeatures: DeskFeature[];
 }

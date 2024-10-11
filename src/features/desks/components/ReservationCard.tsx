@@ -5,9 +5,9 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { FeatureChip } from "./FeatureChip";
 import { Button } from "@mui/material/";
-import { deleteReservation } from "../api/reservationsApi";
 
 type ReservationCardProps = Reservation & {
+  onDelete: (reservedDesk: Reservation) => void
 };
 
 const CardStyled = styled(Card)`
@@ -34,7 +34,7 @@ export const ReservationCard = (props: ReservationCardProps) => {
       <>
         <HeaderBox>
           <Typography variant="h6"> {props.deskName}</Typography>
-          <Button variant='contained' onClick={() => deleteReservation(props.id)}>delete</Button>
+          <Button variant='contained' onClick={() => props.onDelete(props)}>delete</Button>
         </HeaderBox>
       </>
       <FeaturesBox>
