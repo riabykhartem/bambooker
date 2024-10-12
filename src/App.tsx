@@ -5,6 +5,7 @@ import { DesksPage } from './pages/DesksPage.tsx';
 import { SnackbarProvider } from 'notistack';
 import DrawerLayout from './layouts/DrawerLayout.tsx';
 import CenterLayout from './layouts/CenterLayout.tsx';
+import { ReservationsPage } from './pages/ReservationsPage';
 
 
 const queryClient = new QueryClient();
@@ -26,7 +27,12 @@ const browserRouter = createBrowserRouter([
     children: [{
       path: '/:locationId/desks',
       Component: DesksPage
-    }]
+    },
+    {
+      path: '/reservations',
+      Component: ReservationsPage,
+    }
+    ]
   },
 ]);
 

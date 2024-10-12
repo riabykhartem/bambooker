@@ -1,18 +1,13 @@
 import { Button, Dialog, DialogContent, DialogContentText, DialogTitle, styled } from '@mui/material';
-import { addReservation } from '../api/reservationsApi';
-import { Dayjs } from 'dayjs';
+import { deleteReservation } from '../api/reservationsApi';
 import { useMutation } from '@tanstack/react-query';
 import { enqueueSnackbar } from 'notistack';
-import { DeskFeature } from '../../../models/desk.model';
+import Reservation from '../../../models/reservations.model';
 
-
-export interface ReservationDialogProps {
-  deskId: string;
-  deskName: string;
-  deskFeatures: DeskFeature[];
-  selectedDate: Dayjs;
-  dialogIsOpen: boolean;
-  onClose: () => void;
+export interface DeleteReservationDialogProps {
+  reservation: Reservation,
+  dialogIsOpen: boolean,
+  onClose: () => void,
 }
 
 const DialogStyled = styled(Dialog)(({ theme }) => ({
@@ -25,21 +20,21 @@ const DialogStyled = styled(Dialog)(({ theme }) => ({
   },
 }));
 
-export function ReservationDialog(props: ReservationDialogProps) {
+export function DeleteReservationDialog(props: DeleteReservationDialogProps) {
 
   const reserveMutation = useMutation({
-    mutationFn: addReservation,
-    mutationKey: ['reservation'],
+    mutationFn: deleteReservation,
+    mutationKey: ['deleteReservation'],
     onSuccess: () => {
-      console.log('resevation added');
-      enqueueSnackbar(`Desk ${props.deskName} will be waiting for you on ${props.selectedDate.format("MM-DD-YYYY")}`, {
+      console.log('resevation deleted');
+      enqueueSnackbar(`Reservation of the desk ${props.reservation.deskName} on ${props.reservation.date} has been deleted`, {
         variant: 'success',
         autoHideDuration: 3000
       });
     },
 
     onError: () => {
-      enqueueSnackbar("OOps... reservation has failed", {
+      enqueueSnackbar("OOps... cancellation has failed", {
         variant: 'error',
         autoHideDuration: 5000
       });
@@ -48,7 +43,7 @@ export function ReservationDialog(props: ReservationDialogProps) {
 
   const handleConfirmButton = async () => {
     props.onClose();
-    reserveMutation.mutate({ deskId: props.deskId, deskName: props.deskName, deskFeatures: props.deskFeatures, date: props.selectedDate });
+    reserveMutation.mutate(props.reservation.id);
   };
 
 
@@ -57,12 +52,12 @@ export function ReservationDialog(props: ReservationDialogProps) {
       <DialogTitle>Confirm reservation</DialogTitle>
       <DialogContent>
         <DialogContentText>
-          DATE: {props.selectedDate.format("MM-DD-YYYY")}
+          {`Do you want to cancel reservation of desk ${props.reservation.deskName} on ${props.reservation.date.format("MM-DD-YYYY")}?`}
         </DialogContentText>
       </DialogContent>
       <Button onClick={() => props.onClose()}>Cancel</Button>
       <Button variant="outlined" onClick={handleConfirmButton} disabled={reserveMutation.isPending}>
-        Reserve
+        Delete
       </Button>
     </DialogStyled>
   );
